@@ -6,7 +6,8 @@
 	<style>
 		#canvas { border: 1px solid #aaaaaa; display: block; margin: 50px auto; }
 	</style>
-	 <link rel="stylesheet"
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
           href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
           integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
@@ -21,9 +22,17 @@
             crossorigin="anonymous"></script>
 </head>
 	
-<h1 align="center">
-	Hello, this is an Enigma simulator!
-</h1>
+<h2 align="center">
+	Hello, this is an <a href="https://en.wikipedia.org/wiki/Enigma_machine" target="_blank"> Enigma machine</a> simulator!
+</h2>
+<main>
+  <column>
+  		<li> Try typing on the key board!</li>
+        <li> <a href="https://en.wikipedia.org/wiki/Enigma_machine#Rotors" target="_blank"> Rotors</a>: The letter above the rotor represents the state of that rotor. Click on it to step the rotor by 1 rotation. </li>
+        <li> Click the number (0 or 1) on the left to switch between <a href="https://en.wikipedia.org/wiki/Enigma_machine#Reflector" target="_blank"> Reflectors</a>. </li>
+        <li>Click the letters on the right to simulate the <a href="https://en.wikipedia.org/wiki/Enigma_machine#Plugboard" target="_blank"> Plugboard</a>. Click on two letters consecutively to connect them, that is, they are swapped. </li> 
+  </column>
+	
 	
 <body>	
 
@@ -53,7 +62,7 @@
        <input type='text' name="cypher" class="form-control" disabled />
         </div>
 	</div>
-	   <button type="button" id="export" value="SHITE" class="btn btn-raised btn-primary" style="margin-top:20px">导出</button>
+	   <button type="button" id="export" value="SHITE" class="btn btn-raised btn-primary" style="margin-top:20px">export as text</button>
 
 </div>
 
