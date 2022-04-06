@@ -7,6 +7,13 @@ body {
   line-height: 1.8em;
 }
 
+.paper-discription {
+  padding-left: 1em;
+  font-size: 16px;   
+  color: black;
+}
+
+
 a {
   color: #1C9C94;
   text-decoration: none;
@@ -105,7 +112,7 @@ a .fab {
 }
 
 .course .descrition p {
-  padding-left: 1em;
+  padding-left: 10em;
 }
 
 .skills .column {
