@@ -470,7 +470,7 @@ function keyboardMouseDown(i){
 	context.fillRect(X[6],rotor[i],rotorWidth,rotorHeight);
 	context.fillRect(X[7],rotor[i],rotorWidth,rotorHeight);
 	drawLine(X[6]+rotorWidth,rotor[i]+dh,X[7],rotor[i]+dh);
-	drawLine(X[8],rotor[i]+dh,X[7]+rotorWidth,rotor[plug[i]]+dh);
+	drawLine(X[8],rotor[plug[i]]+dh,X[7]+rotorWidth,rotor[i]+dh);
 	i = plug[i];
 	context.fillRect(X[8],rotor[i],rotorWidth,rotorHeight);
 	drawLine(topX[3] + rotorXlen + rotorWidth,plugCenter[i][1],plugCenter[i][0]- 10,plugCenter[i][1]);
