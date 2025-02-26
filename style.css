@@ -13,6 +13,32 @@ body {
   color: black;
 }
 
+.paper-list {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.paper-list li {
+  margin-bottom: 15px;
+}
+
+.paper-list .title {
+  color: #1C9C94;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.paper-list .authors {
+  font-style: italic;
+  display: block;
+  color: #555;
+}
+
+.paper-list .publication {
+  font-size: 16px;
+  display: block;
+  color: #444343;
+}
 
 a {
   color: #1C9C94;
@@ -23,7 +49,7 @@ a:hover {
   opacity: 0.5;
 }
 
-article {
+article{
   padding:0 1em;
 }
 
@@ -91,45 +117,6 @@ a .fab {
   color: white;
 }
 
-.course, .skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.course .title {
-  color: #509e98;
-  -ms-flex: 0 0 33.3%;
-  flex: 0 0 33.3%;
-  max-width: 33%;
-}
-
-.course .descrition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
-  max-width: 66.6%;
-}
-
-.course .descrition p {
-  padding-left: 10em;
-}
-
-.skills .column {
-  -ms-flex: 0 0 50%%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.skills .column ul, ul.job-description {
-  list-style-type: none;
-}
-
-.skills .column ul > li:before {
-  content: "►";
-  padding-right: 0.5em;
-  color: #509e98;
-}
 
 .school, .job-title {
   text-transform: capitalize;
