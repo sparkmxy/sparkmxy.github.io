@@ -165,6 +165,20 @@ ul.job-description li:before{
   color: #509e98;
 }
 
+.visitor-map {
+  width: 220px;
+  max-width: calc(100% - 2em);
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.visitor-map iframe,
+.visitor-map img,
+.visitor-map canvas {
+  max-width: 100% !important;
+  margin: 0 auto;
+}
+
 footer {
  padding: 1em 1.5em;
  background: #A7B8BF;
