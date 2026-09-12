@@ -1,174 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Xinyu Mao</title>
-  <meta name="description" content="Welcome to Xinyu's website!">
-  <meta name="author" content="Xinyu Mao">
-  <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="iconfont.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Xinyu Mao</title>
+  <meta name="description" content="Xinyu Mao (毛昕渝) — research in the foundations of cryptography, real-world cryptography, and AI safety. Publications, preprints, and academic background.">
+  <meta name="author" content="Xinyu Mao">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="homepage.css">
+  <script src="homepage.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <div>
-      <img src="./img/avatar.jpg" />
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#about" aria-label="Xinyu Mao, back to introduction"><img class="site-logo" src="img/little-world.png" width="44" height="44" alt=""><span class="wordmark-name">Xinyu Mao</span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Background</a>
+        <a class="nav-cv" href="CV.pdf" target="_blank" rel="noopener noreferrer">CV <span class="external" aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-    <h1>Xinyu Mao 毛昕渝</h1>
-    <section>
-      <p style="text-align: left;">
-        I recently completed my Ph.D. in Computer Science at the University of Southern California, advised by <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank"><strong>Prof. Jiapeng Zhang</strong></a>. 
-        
-        Starting in October 2026, I will join the University of Waterloo as a postdoctoral fellow, co-hosted by <a href="https://sites.google.com/view/mdhajiabadi" target="_blank"><strong>Prof. Mohammad Hajiabadi</strong></a> and <a href="https://www.douglas.stebila.ca/" target="_blank"><strong>Prof. Douglas Stebila</strong></a>.
-      </p>
-      <p style="text-align: left;">
-         My research focuses on the foundations of cryptography, and more recently, I have also become interested in real-world cryptography and AI safety.
-      </p>
-      <br>
-
-      <i class="iconfont">&#xe670;</i>  xinyumao.tcs@gmail.com
-<!--
-      <a href="https://github.com/sparkmxy" target="_blank">
-        <i class="fa fa-language" aria-hidden="true"></i> 中文版主页
-      </a>
--->   <br>
-      <a href="http://sparkmxy.github.io/CV.pdf" target="_blank">
-        <strong>Curriculum Vitae</strong>
-      </a>
-      <br>
-    
-    </section>
   </header>
-  <main>
 
-    <section>
-      <h3>Preprints</h3>
-      <ol class="paper-list">
-        <li>
-          <span class="title">  <a href="https://arxiv.org/abs/2606.04834" target="_blank">Prediction Under Imperfect Compression: A Theory of Approximate MDL</a> </span>
-          <span class="authors"> with <a href="https://sites.google.com/view/liqiansea" target="_blank">Qian Li</a>,  <a href="https://viterbi-web.usc.edu/~shanghua/" target="_blank">Shang-Hua Teng</a>, and  <a href="https://guangxu-yang.github.io/" target="_blank">Guangxu Yang</a> </span>
-        </li>
-        <li>
-          <span class="title">  <a href="https://eprint.iacr.org/2025/2049" target="_blank">Black-Box Separation Between Multi-Collision Resistance and Collision Resistance</a> </span>
-          <span class="authors"> with <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-        </li>
-      </ol>
+  <main id="main" class="wrap">
+    <section id="about" class="intro" aria-labelledby="name">
+      <div class="intro-copy">
+        <div class="intro-heading">
+          <div class="name"><h1 id="name">Xinyu Mao</h1><span class="chinese-name" lang="zh-CN">毛昕渝</span></div>
+        </div>
+        <div class="intro-description">
+          <p class="bio">I recently completed my Ph.D. in Computer Science at the University of Southern California, advised by <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Prof. Jiapeng Zhang</a>.</p>
+          <p class="bio">My research focuses on the <strong>foundations of cryptography</strong>. More recently, I have also become interested in real-world cryptography and AI safety.</p>
+          <ul class="interests" aria-label="Research interests"><li>Foundations of cryptography</li><li>Real-world cryptography</li><li>AI safety</li></ul>
+          <div class="contact-links">
+            <a class="button" href="CV.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Curriculum Vitae <span aria-hidden="true">↗</span></a>
+            <a class="email-link" href="mailto:xinyumao.tcs@gmail.com"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="1.5"/><path d="m3 5 7 6 7-6"/></svg>xinyumao.tcs@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img id="profile-photo" src="img/avatar.jpg" alt="Portrait of Xinyu Mao" width="236" height="270" fetchpriority="high">
+        <svg class="quiet-stars" viewBox="0 0 34 22" aria-hidden="true" focusable="false"><path d="m11 3 1.8 5.7L18 10l-5.2 1.5L11 17l-1.6-5.5L4 10l5.4-1.3Z"/><path d="m27 2 .8 2.8L31 6l-3.2.7L27 10l-.8-3.3L23 6l3.2-1.2Z"/></svg>
+      </figure>
     </section>
 
-    <section>
-      <h3>Publications</h3>
-      <ol class="paper-list">
-        <li>
-          <span class="title">  <a href="https://eprint.iacr.org/2026/1044" target="_blank">Finding Random Collisions for Random Degree-2 Functions</a></span>
-         <span class="publication">To appear in TCC 2026</span>
-        </li>
-        <li>
-          <span class="title">  <a href="https://eprint.iacr.org/2026/1228" target="_blank">Advancing Pseudorandom Codes: Beyond Parity Checks and Standard-Model CCA1 Security</a></span>
-          <span class="authors"> with Hongxu Yi and <a href="https://yuchen1024.github.io/" target="_blank">Yu Chen</a></span>
-          <span class="publication">To appear in Asiacrypt 2026</span>
-        </li>
-        <li>
-          <span class="title"><a href="https://eprint.iacr.org/2025/199" target="_blank">Sublinear Proofs over Polynomial Rings</a></span>
-          <span class="authors">with <a href="https://sites.google.com/view/miyinghuang" target="_blank">Mi-Ying Huang</a>
-            and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">To appear in Asiacrypt 2026</span>
-        </li>
-        <li>
-          <span class="title">
-            <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2025.33" target="_blank">A Min-Entropy Approach to Multi-Party Communication Lower Bounds </a>
-          </span>
-          <span class="authors">with  <a href="https://sites.google.com/view/miyinghuang" target="_blank">Mi-Ying Huang</a>, 
-            <a href="https://sites.google.com/view/shuowang2002" target="_blank">Shuo Wang</a>,
-            <a href="https://guangxu-yang.github.io/" target="_blank">Guangxu Yang</a>, 
-            and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">CCC 2025</span>
-       </li>
-        <li>
-          <span class="title"><a href="https://eprint.iacr.org/2024/225" target="_blank"> Universal Computational Extractors and Multi-Bit AIPO from Lattice Assumptions</a></span>
-          <span class="authors">with <a href="http://www.chenyilei.net/" target="_blank">Yilei Chen</a></span> 
-          <span class="publication">Eurocrypt 2025 <a href="writings/ec25.pdf" target="_blank">[Slides]</a> </span>
-        </li>
-        <li>
-          <span class="title"><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2025.75" target="_blank"> Gadgetless Lifting Beats Round Elimination: Improved Lower Bounds for Pointer Chasing</a></span>
-          <span class="authors"> with <a href="https://guangxu-yang.github.io/" target="_blank">Guangxu Yang</a> 
-            and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">ITCS 2025 <a href="writings/pointer-chasing-slides.pdf" target="_blank">[Slides]</a></span>
-        </li>
-        <li>
-          <span class="title"><a href="https://arxiv.org/abs/2309.15322" target="_blank">On the Power of SVD in the Stochastic Block Model</a></span>
-          <span class="authors"> with <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">NeurIPS 2023 <a href="writings/svd-on-sbm-slides.pdf" target="_blank">[Slides]</a></span>
-        </li>
-        <li>
-          <span class="title"><a href="https://eprint.iacr.org/2023/1349" target="_blank">Communication Lower Bounds of Key-Agreement Protocols via Density Increment Arguments</a></span>
-          <span class="authors"> with <a href="https://sites.google.com/view/miyinghuang" target="_blank">Mi-Ying Huang</a>, 
-            <a href="https://guangxu-yang.github.io/" target="_blank">Guangxu Yang</a>, 
-            and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">TCC 2023</span>
-        </li>
-        <li>
-          <span class="title"><a href="https://eccc.weizmann.ac.il/report/2022/049/" target="_blank">Non-Adaptive Universal One-Way Hash Functions from Arbitrary One-Way Functions</a></span>
-          <span class="authors"> with <a href="https://sites.google.com/view/noammazor" target="_blank">Noam Mazor</a> 
-            and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Jiapeng Zhang</a></span>
-          <span class="publication">Eurocrypt 2023 <a href="writings/eurocrypt-2023-slides.pdf" target="_blank">[Slides]</a></span>
-        </li>
-    </ol>
-    </section>
+    <aside class="next-chapter" aria-label="Upcoming position">
+      <span class="date">Starting October 2026</span>
+      <p>I will join the <strong>University of Waterloo</strong> as a postdoctoral fellow, co-hosted by <a href="https://sites.google.com/view/mdhajiabadi" target="_blank" rel="noopener noreferrer">Prof. Mohammad Hajiabadi</a> and <a href="https://www.douglas.stebila.ca/" target="_blank" rel="noopener noreferrer">Prof. Douglas Stebila</a>.</p>
+    </aside>
 
-    <section>
-      <h3>Academic Service</h3>
-      <article>
-        <!--<li>Some of my notes and talks are avalible <a href="writings.html" target="_blank"> here</a>.</li>-->
-        Reviewer: TCC(2024), ITCS(2025), CRYPTO(2025, 2026), TCC(2025), ICALP(2026), FOCS(2026), SODA(2026)
-      </article>
-    </section>
+    <div class="body-grid" id="research">
+      <aside class="section-index" aria-label="On this page">
+        <p class="index-title">On this page</p>
+        <nav aria-label="Section navigation">
+          <a href="#preprints">Preprints <span class="count">02</span></a>
+          <a href="#publications">Publications <span class="count">09</span></a>
+          <a href="#education">Education</a>
+          <a href="#service">Academic service</a>
+          <a href="#beyond">Beyond research</a>
+        </nav>
+      </aside>
 
-    <section>
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span>2022-2026</span> <strong>University of Southern California</strong>
-        </div>
-        <div class="descrition">
-          Ph.D. in Computer Science
-        </div>
-        <div class="descrition">
-          Advised by <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank">Prof. Jiapeng Zhang</a>.
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>2018-2022</span> <strong>Shanghai Jiao Tong University</strong>
-        </div>
-        <div class="descrition">
-          Bachelor of Engineering in Computer Science
-        </div>
-         <div class="descrition">
-          I am a member of <a href="https://acm.sjtu.edu.cn/home" target="_blank"> ACM Honor Class</a>, <a href="http://zhiyuan.sjtu.edu.cn/" target="_blank"> Zhiyuan College</a>.
-        </div>
-      </article>
-    </section> 
-    <section>
-      <h3>Miscellaneous </h3>
-    <!--<li>Some of my notes and talks are avalible <a href="writings.html" target="_blank"> here</a>.</li>-->  
-      <li>I wrote an <a href="https://en.wikipedia.org/wiki/Enigma_machine" target="_blank"> Enigma Machine</a> Simulator.
-        Play <a href="enigma.html" target="_blank"> here</a>.</li>
-    </section>
+      <div class="main-content">
+        <section class="content-section" id="preprints" aria-labelledby="preprints-title">
+          <div class="section-heading"><h2 id="preprints-title">Preprints</h2><span class="section-count">02 papers</span></div>
+          <ol class="paper-list">
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Preprint</span><span class="paper-status">2026</span></div>
+              <div class="paper-content">
+                <h3><a href="https://arxiv.org/abs/2606.04834" target="_blank" rel="noopener noreferrer">Prediction Under Imperfect Compression: A Theory of Approximate MDL</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/view/liqiansea" target="_blank" rel="noopener noreferrer">Qian Li</a>, <a href="https://viterbi-web.usc.edu/~shanghua/" target="_blank" rel="noopener noreferrer">Shang-Hua Teng</a>, and <a href="https://guangxu-yang.github.io/" target="_blank" rel="noopener noreferrer">Guangxu Yang</a></p>
+                <div class="paper-links"><a href="https://arxiv.org/abs/2606.04834" target="_blank" rel="noopener noreferrer" aria-label="Read Prediction Under Imperfect Compression: A Theory of Approximate MDL"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>arXiv</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Preprint</span><span class="paper-status">2025</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2025/2049" target="_blank" rel="noopener noreferrer">Black-Box Separation Between Multi-Collision Resistance and Collision Resistance</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://eprint.iacr.org/2025/2049" target="_blank" rel="noopener noreferrer" aria-label="Read Black-Box Separation Between Multi-Collision Resistance and Collision Resistance"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="content-section" id="publications" aria-labelledby="publications-title">
+          <div class="section-heading"><h2 id="publications-title">Publications</h2><span class="section-count">2023 — 2026</span></div>
+          <ol class="paper-list">
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">TCC 2026</span><span class="paper-status">To appear</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2026/1044" target="_blank" rel="noopener noreferrer">Finding Random Collisions for Random Degree-2 Functions</a></h3>
+
+                <div class="paper-links"><a href="https://eprint.iacr.org/2026/1044" target="_blank" rel="noopener noreferrer" aria-label="Read Finding Random Collisions for Random Degree-2 Functions"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Asiacrypt 2026</span><span class="paper-status">To appear</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2026/1228" target="_blank" rel="noopener noreferrer">Advancing Pseudorandom Codes: Beyond Parity Checks and Standard-Model CCA1 Security</a></h3>
+                <p class="authors">with Hongxu Yi and <a href="https://yuchen1024.github.io/" target="_blank" rel="noopener noreferrer">Yu Chen</a></p>
+                <div class="paper-links"><a href="https://eprint.iacr.org/2026/1228" target="_blank" rel="noopener noreferrer" aria-label="Read Advancing Pseudorandom Codes: Beyond Parity Checks and Standard-Model CCA1 Security"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Asiacrypt 2026</span><span class="paper-status">To appear</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2025/199" target="_blank" rel="noopener noreferrer">Sublinear Proofs over Polynomial Rings</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/view/miyinghuang" target="_blank" rel="noopener noreferrer">Mi-Ying Huang</a> and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://eprint.iacr.org/2025/199" target="_blank" rel="noopener noreferrer" aria-label="Read Sublinear Proofs over Polynomial Rings"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">CCC 2025</span></div>
+              <div class="paper-content">
+                <h3><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2025.33" target="_blank" rel="noopener noreferrer">A Min-Entropy Approach to Multi-Party Communication Lower Bounds </a></h3>
+                <p class="authors">with <a href="https://sites.google.com/view/miyinghuang" target="_blank" rel="noopener noreferrer">Mi-Ying Huang</a>, <a href="https://sites.google.com/view/shuowang2002" target="_blank" rel="noopener noreferrer">Shuo Wang</a>, <a href="https://guangxu-yang.github.io/" target="_blank" rel="noopener noreferrer">Guangxu Yang</a>, and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2025.33" target="_blank" rel="noopener noreferrer" aria-label="Read A Min-Entropy Approach to Multi-Party Communication Lower Bounds"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Eurocrypt 2025</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2024/225" target="_blank" rel="noopener noreferrer"> Universal Computational Extractors and Multi-Bit AIPO from Lattice Assumptions</a></h3>
+                <p class="authors">with <a href="http://www.chenyilei.net/" target="_blank" rel="noopener noreferrer">Yilei Chen</a></p>
+                <div class="paper-links"><a href="https://eprint.iacr.org/2024/225" target="_blank" rel="noopener noreferrer" aria-label="Read Universal Computational Extractors and Multi-Bit AIPO from Lattice Assumptions"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a><a href="writings/ec25.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Universal Computational Extractors and Multi-Bit AIPO from Lattice Assumptions">Slides <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">ITCS 2025</span></div>
+              <div class="paper-content">
+                <h3><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2025.75" target="_blank" rel="noopener noreferrer"> Gadgetless Lifting Beats Round Elimination: Improved Lower Bounds for Pointer Chasing</a></h3>
+                <p class="authors">with <a href="https://guangxu-yang.github.io/" target="_blank" rel="noopener noreferrer">Guangxu Yang</a> and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2025.75" target="_blank" rel="noopener noreferrer" aria-label="Read Gadgetless Lifting Beats Round Elimination: Improved Lower Bounds for Pointer Chasing"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a><a href="writings/pointer-chasing-slides.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Gadgetless Lifting Beats Round Elimination: Improved Lower Bounds for Pointer Chasing">Slides <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">NeurIPS 2023</span></div>
+              <div class="paper-content">
+                <h3><a href="https://arxiv.org/abs/2309.15322" target="_blank" rel="noopener noreferrer">On the Power of SVD in the Stochastic Block Model</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://arxiv.org/abs/2309.15322" target="_blank" rel="noopener noreferrer" aria-label="Read On the Power of SVD in the Stochastic Block Model"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>arXiv</a><a href="writings/svd-on-sbm-slides.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for On the Power of SVD in the Stochastic Block Model">Slides <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">TCC 2023</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eprint.iacr.org/2023/1349" target="_blank" rel="noopener noreferrer">Communication Lower Bounds of Key-Agreement Protocols via Density Increment Arguments</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/view/miyinghuang" target="_blank" rel="noopener noreferrer">Mi-Ying Huang</a>, <a href="https://guangxu-yang.github.io/" target="_blank" rel="noopener noreferrer">Guangxu Yang</a>, and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://eprint.iacr.org/2023/1349" target="_blank" rel="noopener noreferrer" aria-label="Read Communication Lower Bounds of Key-Agreement Protocols via Density Increment Arguments"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a></div>
+              </div>
+            </li>
+            <li class="paper">
+              <div class="paper-meta"><span class="venue">Eurocrypt 2023</span></div>
+              <div class="paper-content">
+                <h3><a href="https://eccc.weizmann.ac.il/report/2022/049/" target="_blank" rel="noopener noreferrer">Non-Adaptive Universal One-Way Hash Functions from Arbitrary One-Way Functions</a></h3>
+                <p class="authors">with <a href="https://sites.google.com/view/noammazor" target="_blank" rel="noopener noreferrer">Noam Mazor</a> and <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Jiapeng Zhang</a></p>
+                <div class="paper-links"><a href="https://eccc.weizmann.ac.il/report/2022/049/" target="_blank" rel="noopener noreferrer" aria-label="Read Non-Adaptive Universal One-Way Hash Functions from Arbitrary One-Way Functions"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M11 2v5h5M7 11h6M7 14h6"/></svg>Paper</a><a href="writings/eurocrypt-2023-slides.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Non-Adaptive Universal One-Way Hash Functions from Arbitrary One-Way Functions">Slides <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="content-section" id="education" aria-labelledby="education-title">
+          <div class="section-heading"><h2 id="education-title">Education</h2></div>
+          <article class="education-item">
+            <p class="education-date">2022 — 2026</p>
+            <div><h3>University of Southern California</h3><p>Ph.D. in Computer Science</p><p class="education-note">Advised by <a href="https://sites.google.com/site/jiapeng0708/home" target="_blank" rel="noopener noreferrer">Prof. Jiapeng Zhang</a>.</p></div>
+          </article>
+          <article class="education-item">
+            <p class="education-date">2018 — 2022</p>
+            <div><h3>Shanghai Jiao Tong University</h3><p>Bachelor of Engineering in Computer Science</p><p class="education-note">Member of the <a href="https://acm.sjtu.edu.cn/home" target="_blank" rel="noopener noreferrer">ACM Honor Class</a>, <a href="http://zhiyuan.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Zhiyuan College</a>.</p></div>
+          </article>
+        </section>
+
+        <section class="content-section" id="service" aria-labelledby="service-title">
+          <div class="section-heading"><h2 id="service-title">Academic service</h2></div>
+          <p class="service-label">Reviewer for</p>
+          <ul class="venue-list">
+            <li>CRYPTO<span>2025, 2026</span></li>
+            <li>TCC<span>2024, 2025</span></li>
+            <li>ITCS<span>2025</span></li>
+            <li>ICALP<span>2026</span></li>
+            <li>FOCS<span>2026</span></li>
+            <li>SODA<span>2026</span></li>
+          </ul>
+        </section>
+
+        <section class="content-section" id="beyond" aria-labelledby="beyond-title">
+          <div class="section-heading"><h2 id="beyond-title">Beyond research</h2></div>
+          <div class="beyond">
+            <div><h3>Enigma Machine Simulator</h3><p>I wrote a simulator of the <a href="https://en.wikipedia.org/wiki/Enigma_machine" target="_blank" rel="noopener noreferrer">Enigma machine</a>. Give it a try.</p></div>
+            <a class="text-link" href="enigma-new.html" target="_blank" rel="noopener noreferrer">Play with Enigma <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 
-
-
-  <!--This map cannot load locally; remove it when editing locally -->
-<div class="visitor-map">
-  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=UFH5K7Yi-zmDj06CjiMnrWWMhHZe_KYRxgTCaeLLnyU&cl=ffffff&w=220"></script>
-</div>
-
-
-<footer>
-  Powered by <a href="https://pages.github.com/" target="_blank">Github Pages</a>.
-</footer>
-
+  <footer class="wrap site-footer">
+    <div class="footer-signature">
+      <img class="little-world" src="img/little-world.png" width="72" height="72" alt="" loading="lazy" decoding="async">
+      <div>
+        <p class="footer-name">Xinyu Mao <span lang="zh-CN">毛昕渝</span></p>
+        <p class="asteroid-caption" aria-hidden="true" title="A little nod to The Little Prince">B–612</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <details class="visitor-details"><summary>Visitor map</summary><div class="visitor-map" id="visitor-map"><p class="visitor-note">The visitor map is available on the live website.</p></div></details>
+      <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></p>
+    </div>
+  </footer>
 </body>
 </html>

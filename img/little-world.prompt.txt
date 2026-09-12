@@ -1,0 +1,10 @@
+Created with the built-in image generation tool. One generated image.
+
+Use case: illustration-story
+Asset type: one compact footer decoration for an elegant academic homepage, displayed at 72px on white.
+Primary request: a tiny spherical asteroid inspired by B-612 from The Little Prince, with a single delicate rose growing on top. An original interpretation, not a replica of any book illustration.
+Scene/backdrop: genuinely transparent background with alpha; no scenery or background color.
+Style/medium: minimal fine pen-and-ink storybook marginalia. A slightly uneven hand-drawn planetary outline, one tiny crater, and a few spare expressive ink strokes. Restrained and elegant.
+Composition/framing: single complete compact motif centered and occupying most of a square canvas, with comfortable small transparent margins. Rose and planet must both remain complete and clear, with dark strokes thick enough to stay legible when reduced to 72px. Sparse detail.
+Color palette: deep navy #1c2636 ink, restrained antique-gold detail on the rose only; harmonious with a white homepage and blue #2358be accents.
+Constraints: exactly one image, one asteroid and one rose. No character, no person, no quote, no lettering, no label, no stars, no background scenery, no mockup, no watermark. Preserve genuine transparency.
