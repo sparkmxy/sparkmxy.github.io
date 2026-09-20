@@ -1,0 +1,839 @@
+[
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 0,
+    "old": "音tuM",
+    "new": "音tuàn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 1,
+    "old": "充沛字宙间",
+    "new": "充沛宇宙间",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 1,
+    "old": "于时配春",
+    "new": "于时配春。”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "雨永的滋润",
+    "new": "雨水的滋润",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 5,
+    "old": "亦喊《乾》",
+    "new": "亦喻《乾》",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 10,
+    "old": "新的帕气",
+    "new": "新的阳气",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 10,
+    "old": "重定叁氏学",
+    "new": "重定费氏学",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "tuan",
+    "field": "notes",
+    "index": 10,
+    "old": "贞下起元《",
+    "new": "贞下起元”。《",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "谓之《小象》本则",
+    "new": "谓之《小象》。”本则",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "image",
+    "field": "notes",
+    "index": 2,
+    "old": "下文推阐睡的结果",
+    "new": "下文推阐的结果",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "音xidn",
+    "new": "音xiàn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "lines.3",
+    "field": "explanation",
+    "index": 0,
+    "old": "比勒唯处",
+    "new": "比较难处",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "lines.3",
+    "field": "explanation",
+    "index": 0,
+    "old": "四多惧屋而",
+    "new": "四多惧”。而",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 1,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 0,
+    "old": "音kdng",
+    "new": "音kàng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "即官“坤”",
+    "new": "即言“坤”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "judgment",
+    "field": "notes",
+    "index": 2,
+    "old": "以龙繇",
+    "new": "以龙象",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "judgment",
+    "field": "notes",
+    "index": 3,
+    "old": "朱验声",
+    "new": "朱骏声",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "行地无我",
+    "new": "行地无疆",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 1,
+    "old": "氤前之气",
+    "new": "氤氲之气",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "lineImages.0",
+    "field": "notes",
+    "index": 0,
+    "old": "朱某据",
+    "new": "朱熹据",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "六二闲居阴位",
+    "new": "六二阴居阴位",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "所京“坤”",
+    "new": "所禀“坤”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 2,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "'直方大'c",
+    "new": "‘直方大’。”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "音zhUn",
+    "new": "音zhūn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "象呼木之初生",
+    "new": "象艸木之初生",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "象沙牛木之初生",
+    "new": "象艸木之初生",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "以下《演》",
+    "new": "以下《随》",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "tuan",
+    "field": "notes",
+    "index": 2,
+    "old": "“氤1T情状",
+    "new": "“氤氲”情状",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "夭造草昧",
+    "new": "天造草昧",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "水在留下",
+    "new": "水在雷下",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "故意坎",
+    "new": "故震坎",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "遭如",
+    "new": "邅如",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "音zhdn",
+    "new": "音zhān",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "遭如",
+    "new": "邅如",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "《责〉",
+    "new": "《贲》",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "屯难其声",
+    "new": "屯难其膏",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "正见\"声\"象",
+    "new": "正见“膏”象",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "居《屯》算位",
+    "new": "居《屯》尊位",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 3,
+    "key": "lineImages.3",
+    "field": "notes",
+    "index": 0,
+    "old": "礼求下译",
+    "new": "礼求下贤",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 4,
+    "key": "judgment",
+    "field": "notes",
+    "index": 3,
+    "old": "以蕃草",
+    "new": "以蓍草",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 4,
+    "key": "judgment",
+    "field": "notes",
+    "index": 3,
+    "old": "笑为筮",
+    "new": "策为筮",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 4,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "音Zhigo",
+    "new": "音zhìgù",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 4,
+    "key": "lineImages.4",
+    "field": "notes",
+    "index": 0,
+    "old": "音xQn",
+    "new": "音xùn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 5,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "象征“常待”",
+    "new": "象征“需待”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 5,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "需者，侍也",
+    "new": "需者，待也",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 5,
+    "key": "tuan",
+    "field": "notes",
+    "index": 1,
+    "old": "卦名“帚”",
+    "new": "卦名“需”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 5,
+    "key": "lineImages.1",
+    "field": "notes",
+    "index": 0,
+    "old": "音yin",
+    "new": "音yǎn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 6,
+    "key": "tuan",
+    "field": "notes",
+    "index": 0,
+    "old": "下扑坎",
+    "new": "下卦坎",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 6,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 1,
+    "old": "音bii",
+    "new": "音bū",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 6,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 2,
+    "old": "音sMng",
+    "new": "音shěng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 6,
+    "key": "lineImages.1",
+    "field": "notes",
+    "index": 1,
+    "old": "音du6",
+    "new": "音duō",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 6,
+    "key": "lineImages.1",
+    "field": "notes",
+    "index": 1,
+    "old": "音chub",
+    "new": "音chuò",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 7,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "音zdng",
+    "new": "音zāng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 8,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 1,
+    "old": "音fbu",
+    "new": "音fǒu",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 9,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "懿文德：部，音yl",
+    "new": "懿文德：懿，音yì",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 9,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "音Iu6n",
+    "new": "音luán",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 11,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "音PL",
+    "new": "音pí，",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 12,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 1,
+    "old": "音ch6u",
+    "new": "音chóu",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 12,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 1,
+    "old": "音bSo",
+    "new": "音bāo",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "瑞，音y6ng",
+    "new": "墉，音yōng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "号映，音h60tdo",
+    "new": "号咷，音háotáo",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "先号唬",
+    "new": "先号咷",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "号唾",
+    "new": "号咷",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "号嘘",
+    "new": "号咷",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 13,
+    "key": "lineImages.4",
+    "field": "notes",
+    "index": 0,
+    "old": "号唾",
+    "new": "号咷",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 14,
+    "key": "lineImages.3",
+    "field": "notes",
+    "index": 0,
+    "old": "音zh6",
+    "new": "音zhé",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 15,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "音pbu",
+    "new": "音póu",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 15,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "音p6u",
+    "new": "音póu",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 15,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "读ch6ng",
+    "new": "读chēng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 15,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "无不利，初谦：物",
+    "new": "无不利，撝谦：撝",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 15,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "挑谦者",
+    "new": "撝谦者",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "tuan",
+    "field": "notes",
+    "index": 2,
+    "old": "万本万物",
+    "new": "万事万物",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "肝豫悔：吁，音xii",
+    "new": "盱豫悔：盱，音xū",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "睢叶",
+    "new": "睢盱",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "睢吁",
+    "new": "睢盱",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "睢时而豫",
+    "new": "睢盱而豫",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 16,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 1,
+    "old": "音zdn",
+    "new": "音zān",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 18,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "蛊：音加",
+    "new": "蛊：音gǔ",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 18,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "即官“干父之害”",
+    "new": "即言“干父之害”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 18,
+    "key": "tuan",
+    "field": "notes",
+    "index": 0,
+    "old": "卦名“盟”",
+    "new": "卦名“蛊”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 18,
+    "key": "tuan",
+    "field": "notes",
+    "index": 0,
+    "old": "治“蛊《",
+    "new": "治“蛊”。《",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 19,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "监视除察",
+    "new": "监视临察",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 19,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "《毅梁传》",
+    "new": "《穀梁传》",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 20,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "音guM",
+    "new": "音guàn",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 20,
+    "key": "judgment",
+    "field": "notes",
+    "index": 2,
+    "old": "有孚顺若：顺，音y6ng",
+    "new": "有孚颙若：颙，音yóng",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 20,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "①间观，利女贞：阅",
+    "new": "①闚观，利女贞：闚",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 20,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "音kui",
+    "new": "音kuī",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "音shlhd卦名",
+    "new": "音shìhé，卦名",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "音ni6",
+    "new": "音niè",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "音chi",
+    "new": "音chì",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "噬干脚：肺，音ZI",
+    "new": "噬干胏：胏，音zǐ",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "有骨谓之蹄",
+    "new": "有骨谓之胏",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  },
+  {
+    "number": 21,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "“噬瞌”",
+    "new": "“噬嗑”",
+    "reason": "核对书页及对应释词，修正明显OCR错字。"
+  }
+]

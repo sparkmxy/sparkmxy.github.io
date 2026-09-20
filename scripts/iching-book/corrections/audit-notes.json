@@ -1,0 +1,59 @@
+{
+  "source": "C:/Users/xinyu/Documents/周易译注.pdf",
+  "pdfPageOffset": 31,
+  "visuallyReviewedPages": [32, 33, 35, 37, 38, 47, 48, 49, 53, 56, 250, 251, 254, 255],
+  "scope": "Annotated passages already displayed in the website; the separate 文言 chapter is outside this mapping.",
+  "geometry": {
+    "classicColumn": "PDF even pages left; PDF odd pages right. Translation is the other column. Classify bands vertically before splitting columns.",
+    "normalFullWidthLeft": "Even approximately x78–87; odd x97–103 points. Varies with scanning alignment.",
+    "explanationLeftIndent": "Approximately 24 points beyond normalFullWidthLeft, including continuation lines.",
+    "overviewLeftIndent": "Returns to normalFullWidthLeft. Label OCR is unreliable.",
+    "warning": "Translation columns may extend beyond typical body margins: PDF35 left translation begins near x76 despite other text near x97; PDF48 right translation extends beyond x515. Do not hard-clip all glyphs to annotation margins."
+  },
+  "overviewAnchors": [
+    {"number": 1, "pages": [45, 46], "start": {"page":45,"top":717.3}, "end":{"page":46,"top":307.2}, "startsWith":"《乾》卦作为《周易》六十四卦之首", "endsWith":"是这部现存最古老的哲学著作所具备的重要特色。"},
+    {"number": 2, "pages": [56, 57], "start": {"page":56,"top":604.8}, "end":{"page":57,"top":87.4}, "startsWith":"《周易》以《坤》卦继《乾》卦之后", "endsWith":"是宇宙间事物运动、变化、发展的源泉。"},
+    {"number": 38, "pages": [255], "start": {"page":255,"top":385.3}, "end":{"page":255,"top":621.8}, "startsWith":"人情物理，总是好合不好离，喜聚不喜散。", "endsWith":"进一步显露出应有的色彩。"}
+  ],
+  "qianCombinedLineImages": {
+    "pages": [37, 38],
+    "noteScope": "本段注释合释乾卦六爻及用九的小象。",
+    "translation": [
+      "“巨龙潜伏水中，暂不施展才用”，说明阳气初生居位低下。",
+      "“巨龙出现田间”，说明美德昭著广施无涯。",
+      "“整天健强振作”，说明反复行道不使偏差。",
+      "“或腾跃上进，或退处在渊”，说明审时前进必无咎害。",
+      "“巨龙高飞上天”，说明大人奋起大展雄才。",
+      "“巨龙高飞穷极，终将有所悔恨”，说明刚进过甚不久必衰。",
+      "“用九数”，说明“天”的美德不自居首（刚去柔来）。"
+    ],
+    "notes": [
+      "① 阳在下：指初九阳气初生而居下。《集解》引荀爽曰：“气微位卑，虽有阳德，潜藏在下，故曰‘勿用’也。”案，自此以下至“不可为首也”，是《乾》卦的《小象传》，每两句释一爻象，末两句释“用九”。",
+      "② 德施普：指九二阳气出现于地面，其生养之德普及万物。《正义》：“此以人事言之，用龙德在田，似圣人已出在世，道德恩施能普遍也。”",
+      "③ 反复道：反复，《本义》：“重复践行之意。”《周易玩辞》：“三以自修，故曰反复。”道，合理的行为。",
+      "④ 造：《释文》引郑注：“为也”，《本义》：“犹作也”；即兴起而有所作为之意。",
+      "⑤ 天德：指阳刚之德。《正义》：“天德刚健，当以柔和接待于下，不可更怀尊刚为物之首，故云‘天德不可为首’也。”"
+    ],
+    "explanation": ["《小象传》是根据卦象、爻位等分别阐释卦中六则爻辞的象征意义。《乾》卦附有“用九”辞，所以《小象传》也相应多了“用九，天德不可为首也”一则。"]
+  },
+  "emptyNotesVerified": [
+    {"number":38,"field":"lineImages","index":3,"page":254,"reason":"九四小象‘交孚无咎，志行也’，原书紧接说明，没有单列注释。"},
+    {"number":38,"field":"lineImages","index":4,"page":254,"reason":"六五小象‘厥宗噬肤，往有庆也’，原书紧接说明，没有单列注释。"}
+  ],
+  "ocrCorrections": [
+    {"page":33,"passage":"乾·九三译文","correct":"九三，君子整天健强振作不息，直到夜间还时时警惕慎行，这样，即使面临危险也免遭咎害。","reason":"First translation line OCR is severely corrupted."},
+    {"page":255,"passage":"睽·上九小象译文","correct":"《象传》说：“遇到阴阳和合的甘雨就获得吉祥”，说明上九的种种猜疑都已经消失。","reason":"Both columns are merged in raw text; the classic line must remain separate."}
+  ],
+  "boundaryChecks": [
+    "乾初九注释 begins PDF32 and continues PDF33 before its explanation.",
+    "乾大象注释 begins PDF36 and continues PDF37 before its explanation.",
+    "乾七小象 shared explanation ends with 一则。 on the first body line of PDF38, before 文言.",
+    "坤卦辞 notes begins PDF47, ends PDF48; explanation PDF48 before 彖.",
+    "坤彖 begins PDF48, notes continues PDF49; explanation PDF49 before 大象.",
+    "坤六三 classic and translation begin at bottom PDF50 and continue at top PDF51 after the column side flips.",
+    "坤用六 notes begins PDF52 and continues PDF53; useAllImage follows, then 文言 must not be absorbed into useAllImage.",
+    "睽彖 classic and translation begin PDF250 and continue PDF251 after the column side flips.",
+    "睽上九 notes begins PDF254 and continues PDF255; then its 小象, then 说明, then 总论.",
+    "Keep every parsed full-width band in either notes, explanation, overview, or explicit excluded 文言 region; do not silently discard unmatched body paragraphs."
+  ]
+}

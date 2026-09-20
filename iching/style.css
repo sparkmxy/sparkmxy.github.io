@@ -24,3 +24,25 @@
 .dialog-lines>.line-with-image:first-of-type{margin-top:13px}
 #hexagram-dialog .commentary-text{font-size:17px}
 @media(max-width:640px){.hex-commentary{margin-top:18px}.commentary-text{font-size:15px}.hex-card{grid-template-columns:58px minmax(0,1fr);gap:17px}.hex-card .stage-lines{width:58px}.hex-card .yao-bars{gap:8px}.line-image,.all-lines .line-image{font-size:14px}#hexagram-dialog .commentary-text,.dialog-lines .dialog-yao{font-size:16px}}
+
+.book-source-note{margin:-4px 0 22px;padding:13px 16px;border-left:2px solid #acb699;background:#e9ece15c;color:#68745f;font-size:11px;line-height:1.9}
+.book-notes{margin-top:10px;border:1px solid #dbe0d1;background:#edf0e44d}
+.book-notes>summary,.all-lines .book-notes>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:44px;padding:10px 12px;color:#68745f;font-family:var(--sans);font-size:12px;line-height:1.7;letter-spacing:.5px}
+.book-notes[open]>summary{border-bottom:1px solid #dbe0d1;background:#e9edde80}
+.book-toggle{font-size:14px;transition:transform .2s}
+.book-notes[open] .book-toggle{transform:rotate(45deg)}
+.book-notes-body{padding:13px 14px 15px;overflow-wrap:anywhere}
+.book-notes-body section+section{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.book-subheading{margin:0 0 8px;color:#506249;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:1px}
+.book-notes-body p,.all-lines .book-notes-body p{margin:8px 0 0;font-family:var(--sans);font-size:14px;line-height:2;color:#56634f;white-space:pre-line}
+.book-notes-body .book-translation p{font-size:15px;color:var(--ink)}
+.book-citation,.book-notes-body .book-citation,.all-lines .book-citation{margin-top:15px;font-family:var(--sans);font-size:10px;line-height:1.9;color:var(--muted)}
+.book-overview{grid-column:1/-1;margin-top:4px;padding-top:22px;border-top:1px solid var(--line);overflow-wrap:anywhere}
+.book-overview-heading,.hex-card .book-overview-heading{margin:0 0 14px;font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:2px}
+.book-overview>p{font-family:var(--sans);font-size:14px;line-height:2.1;margin:12px 0 0;white-space:pre-line}
+.book-overview>.book-citation{font-size:10px;color:var(--muted)}
+.book-overview>.book-unavailable{font-size:11px;color:var(--muted)}
+#hexagram-dialog .book-overview{margin-top:28px}
+.line-image-group{margin-top:13px}
+@media(max-width:640px){.book-notes-body{padding:11px}.book-overview>p{line-height:2}.book-overview>.book-citation{font-size:10px}.book-notes>summary{padding-inline:9px}.book-source-note{font-size:11px;padding:11px 13px}}
+.book-notes-body p.book-subheading{margin:0 0 8px;font-size:11px;font-weight:500;color:#506249;letter-spacing:1px}.book-notes-body .book-note-scope{font-size:11px;border-left:2px solid #a9b797;padding-left:9px;margin:0 0 13px}

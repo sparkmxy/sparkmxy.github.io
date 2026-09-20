@@ -1,0 +1,1352 @@
+[
+  {
+    "number": 22,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "贲如，解如",
+    "new": "贲如，皤如",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 22,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "幡，音P6",
+    "new": "皤，音pó",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 22,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "《集解.》",
+    "new": "《集解》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 22,
+    "key": "lineImages.5",
+    "field": "explanation",
+    "index": 0,
+    "old": "《论语八俏》",
+    "new": "《论语·八佾》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 22,
+    "key": "lineImages.5",
+    "field": "explanation",
+    "index": 0,
+    "old": "《论语\"绘事后素。‘",
+    "new": "《论语》'绘事后素。'",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 23,
+    "key": "lineImages.0",
+    "field": "explanation",
+    "index": 0,
+    "old": "以灭下也此说",
+    "new": "以灭下也'。”此说",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 23,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "道理c",
+    "new": "道理。",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 23,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "即是1例",
+    "new": "即是一例",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 25,
+    "key": "lineImages.0",
+    "field": "explanation",
+    "index": 0,
+    "old": "是之谓'无妄以此",
+    "new": "是之谓'无妄'。以此",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "《本义》谓“当为'日月'之'日据此",
+    "new": "《本义》谓“当为'日月'之'日'”。据此",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "则郑读“日，",
+    "new": "则郑读“日”；",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "童牛之梏",
+    "new": "童牛之牿",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "格，音gu",
+    "new": "牿，音gù",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "“木格”",
+    "new": "“木牿”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "加“特”",
+    "new": "加“牿”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "狱豕",
+    "new": "豮豕",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "播，音伯n",
+    "new": "豮，音fén",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "豕去势曰破",
+    "new": "豕去势曰豮",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "音shl",
+    "new": "音shǐ",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "车模",
+    "new": "车輹",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "蝶猛",
+    "new": "躁猛",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "虽象之维之",
+    "new": "虽絷之维之",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "若收去其势",
+    "new": "若豮去其势",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 0,
+    "old": "音qQ",
+    "new": "音qú",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 0,
+    "old": "四达谓之'荷'",
+    "new": "四达谓之'衢'",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 0,
+    "old": "《大奋》",
+    "new": "《大畜》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.5",
+    "field": "notes",
+    "index": 0,
+    "old": "何天之衡",
+    "new": "何天之衢",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "lines.5",
+    "field": "explanation",
+    "index": 0,
+    "old": "胡谖",
+    "new": "胡瑗",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "以南其德",
+    "new": "以畜其德",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "前代圣贤的音行",
+    "new": "前代圣贤的言行",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "朱次说",
+    "new": "朱熹说",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "《子张川",
+    "new": "《子张》）",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 26,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "、论语》",
+    "new": "、《论语》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 27,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "《噬盛》",
+    "new": "《噬嗑》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 27,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "动止喝物",
+    "new": "动止嚼物",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "移用白茅",
+    "new": "藉用白茅",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "枯杨生梯",
+    "new": "枯杨生稊",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "梯，音tf",
+    "new": "稊，音tí",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "生秘",
+    "new": "生稊",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "栋梯",
+    "new": "栋桡",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "梯，音n60",
+    "new": "桡，音náo",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "栋楼",
+    "new": "栋桡",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "“槐”字",
+    "new": "“桡”字",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "作'槐’",
+    "new": "作'桡’",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 28,
+    "key": "judgment",
+    "field": "notes",
+    "index": 1,
+    "old": "《彖传》“检”字同",
+    "new": "《彖传》“桡”字同",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "坎容",
+    "new": "坎窞",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "窖，音ddn",
+    "new": "窞，音dàn",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "坎客",
+    "new": "坎窞",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "富宽",
+    "new": "簋贰",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "智，音gui",
+    "new": "簋，音guǐ",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "从竹、皿、磨",
+    "new": "从竹、皿、皀",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "“莫太”",
+    "new": "“簋贰”",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "两篁食",
+    "new": "两簋食",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "音ydu",
+    "new": "音yǒu",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "淡食两彩",
+    "new": "淡食两簋",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "二筐之食",
+    "new": "二簋之食",
+    "reason": "原书上册PDF204逐图核对"
+  },
+  {
+    "number": 29,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "《小彖传》",
+    "new": "《小象传》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "tuan",
+    "field": "notes",
+    "index": 2,
+    "old": "井释卦辞",
+    "new": "并释卦辞",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "水涛至",
+    "new": "水洊至",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "洛，音沁n",
+    "new": "洊，音jiàn",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 29,
+    "key": "image",
+    "field": "notes",
+    "index": 0,
+    "old": "水流仍游之象",
+    "new": "水流仍洊之象",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 30,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "日民之离",
+    "new": "日昃之离",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 30,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "望，音di6",
+    "new": "耋，音dié",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 30,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "“大重”",
+    "new": "“大耋”",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 30,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "大量之嗟",
+    "new": "大耋之嗟",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 30,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "瞰U突喷",
+    "new": "曦霞突喷",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 30,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "突如其来如其明始进",
+    "new": "突如其来如'。其明始进",
+    "reason": "原书上册PDF209逐图核对"
+  },
+  {
+    "number": 31,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "威其腓",
+    "new": "咸其腓",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "音f6i",
+    "new": "音féi",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 1,
+    "old": "音chOng",
+    "new": "音chōng",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 1,
+    "old": "憧懂往来",
+    "new": "憧憧往来",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "咸其胸",
+    "new": "咸其脢",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "胸，音m6i",
+    "new": "脢，音méi",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "“脚”",
+    "new": "“脢”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "当以*L\"为防",
+    "new": "当以“礼”为防",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 31,
+    "key": "tuan",
+    "field": "notes",
+    "index": 1,
+    "old": "U艮刚在下",
+    "new": "艮刚在下",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 32,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "音2n",
+    "new": "音jùn",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "lineImages.0",
+    "field": "explanation",
+    "index": 0,
+    "old": "看待O",
+    "new": "看待。",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "未能避避",
+    "new": "未能退避",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "\"臣妾-相畜",
+    "new": "\"臣妾\"相畜",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "〈重定费氏学理1",
+    "new": "《重定费氏学》引",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "《遗》象",
+    "new": "《遯》象",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "矜产自守",
+    "new": "矜严自守",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "不情恶",
+    "new": "不憎恶",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "《书微子》",
+    "new": "《书·微子》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "“避避”",
+    "new": "“退避”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 33,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "\"避避\"",
+    "new": "\"退避\"",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 34,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 2,
+    "old": "瓶羊触藩",
+    "new": "羝羊触藩",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 34,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 2,
+    "old": "来，音dr",
+    "new": "羝，音dī",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 34,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 2,
+    "old": "牡三岁曰班",
+    "new": "牡三岁曰羝",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 34,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 2,
+    "old": "胡暖曰",
+    "new": "胡瑗曰",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 34,
+    "key": "lineImages.3",
+    "field": "explanation",
+    "index": 0,
+    "old": "朱嘉又辨析",
+    "new": "朱熹又辨析",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "晋如贻鼠",
+    "new": "晋如鼫鼠",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "孤（音shi）鼠",
+    "new": "鼫（音shí）鼠",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "“贻鼠”",
+    "new": "“鼫鼠”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "lines.3",
+    "field": "notes",
+    "index": 0,
+    "old": "'拓鼠'",
+    "new": "'鼫鼠'",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "lineImages.1",
+    "field": "explanation",
+    "index": 0,
+    "old": "r王母",
+    "new": "“王母",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 35,
+    "key": "tuan",
+    "field": "notes",
+    "index": 1,
+    "old": "署长",
+    "new": "晋长",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 36,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "莅，音n",
+    "new": "莅，音lì",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 36,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "犹言“治众这是",
+    "new": "犹言“治众”。这是",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 37,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "《周礼•夭官•膳夫》",
+    "new": "《周礼·天官·膳夫》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 37,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "进物于尊者曰情",
+    "new": "进物于尊者曰馈",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 37,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "“家中饮食事宜此谓",
+    "new": "“家中饮食事宜”。此谓",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 37,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "d）王假有家",
+    "new": "①王假有家",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 37,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "（g6）",
+    "new": "（gé）",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "其牛犁",
+    "new": "其牛掣",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "音V6",
+    "new": "音yè",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "音ch6",
+    "new": "音chè",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "其人夭且则",
+    "new": "其人天且劓",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "刺，音yl",
+    "new": "劓，音yì",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "“刺”酷刑",
+    "new": "“劓”酷刑",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "'则'之伤",
+    "new": "'劓'之伤",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "胡谖",
+    "new": "胡瑗",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "lines.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "《庄子德充符》",
+    "new": "《庄子·德充符》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "音kW",
+    "new": "音kuí",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "两目相背.，",
+    "new": "两目相背，",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 38,
+    "key": "image",
+    "field": "explanation",
+    "index": 0,
+    "old": "呜呼I",
+    "new": "呜呼！",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 39,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "音沁n",
+    "new": "音jiǎn",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 39,
+    "key": "tuan",
+    "field": "notes",
+    "index": 0,
+    "old": "知乡I",
+    "new": "知矣哉",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 40,
+    "key": "image",
+    "field": "notes",
+    "index": 1,
+    "old": "以“救过宥罪”",
+    "new": "以“赦过宥罪”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "已事选往",
+    "new": "已事遄往",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "遇，音chudn",
+    "new": "遄，音chuán",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "lines.0",
+    "field": "notes",
+    "index": 0,
+    "old": "遇，速也",
+    "new": "遄，速也",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "天地纲编",
+    "new": "天地絪缊",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "二维应有时",
+    "new": "二簋应有时",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "“二:可用享”",
+    "new": "“二簋可用享”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "“二篡”",
+    "new": "“二簋”",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 41,
+    "key": "tuan",
+    "field": "notes",
+    "index": 3,
+    "old": "二签至约",
+    "new": "二簋至约",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 42,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 1,
+    "old": "音gg玉器名",
+    "new": "音guī，玉器名",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 42,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 1,
+    "old": "《礼记郊特牲》",
+    "new": "《礼记·郊特牲》",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "壮于顺",
+    "new": "壮于頄",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "颁，音qi。",
+    "new": "頄，音qiú",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "赖骨",
+    "new": "颧骨",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.2",
+    "field": "notes",
+    "index": 0,
+    "old": "壮于颁",
+    "new": "壮于頄",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "范，音xidn",
+    "new": "苋，音xiàn",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "范陆",
+    "new": "苋陆",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lines.4",
+    "field": "notes",
+    "index": 0,
+    "old": "马齿览",
+    "new": "马齿苋",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "壮于城",
+    "new": "壮于頄",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "lineImages.2",
+    "field": "explanation",
+    "index": 0,
+    "old": "乃'无咎此说",
+    "new": "乃'无咎'。”此说",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "judgment",
+    "field": "notes",
+    "index": 3,
+    "old": "告自色",
+    "new": "告自邑",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 43,
+    "key": "judgment",
+    "field": "notes",
+    "index": 3,
+    "old": "政令于色",
+    "new": "政令于邑",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 44,
+    "key": "lines.1",
+    "field": "notes",
+    "index": 0,
+    "old": "檀自动用",
+    "new": "擅自动用",
+    "reason": "订正明显OCR误字；依据原书页及同段术语/引文上下文"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "①如：音gm",
+    "new": "①姤：音gòu",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "“媚，遇也”",
+    "new": "“姤，遇也”",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "故谓“垢”",
+    "new": "故谓“姤”",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "“妮,遇也",
+    "new": "“姤，遇也",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "故名为'垢'",
+    "new": "故名为'姤'",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "“斯”字",
+    "new": "“姤”字",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "写作“遵”",
+    "new": "写作“遘”",
+    "reason": "原书下册PDF39逐图核对"
+  },
+  {
+    "number": 44,
+    "key": "judgment",
+    "field": "notes",
+    "index": 0,
+    "old": "古文作'遗'",
+    "new": "古文作'遘'",
+    "reason": "原书下册PDF39逐图核对"
+  }
+]

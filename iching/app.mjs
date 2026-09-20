@@ -1,6 +1,7 @@
 import { createCast, YARROW_MODEL } from './core.mjs';
 import { getEntropy } from './random.mjs';
 import { HEXAGRAMS, getHexagram, TRIGRAMS } from './hexagrams.mjs';
+import { appendBookDisclosure, bookOverview } from './book-ui.mjs';
 
 const $ = (selector) => document.querySelector(selector);
 const positions = ['初', '二', '三', '四', '五', '上'];
@@ -125,19 +126,26 @@ function trigramText(hex) {
   const upper = TRIGRAMS.find(t => t.bits === hex.bits.slice(3));
   return upper && lower ? `${upper.name}上 · ${lower.name}下` : hex.title;
 }
-function commentaryBlock(label, text, headingTag = 'h4') {
+function commentaryBlock(label, text, headingTag = 'h4', hex, field) {
   const section = el('section', 'hex-commentary');
   section.append(el(headingTag, 'commentary-label', label), el('p', 'commentary-text', text));
+  if (hex) appendBookDisclosure(section, hex.number, field);
   return section;
 }
-function lineImage(text) {
+function lineImage(text, hex, field = 'lineImages', index) {
+  const group = el('div', 'line-image-group');
   const p = el('p', 'line-image');
   p.append(el('span', 'commentary-label', '象传 · 小象'), document.createTextNode(text));
-  return p;
+  group.append(p);
+  if (hex) appendBookDisclosure(group, hex.number, field, index);
+  return group;
 }
-function appendLineWithImage(container, text, image, className) {
+function appendLineWithImage(container, text, image, className, hex, index) {
   const group = el('div', 'line-with-image');
-  group.append(el('p', className, text), lineImage(image));
+  const special = index === undefined;
+  group.append(el('p', className, text));
+  appendBookDisclosure(group, hex.number, special ? 'useAll' : 'lines', index);
+  group.append(lineImage(image, hex, special ? 'useAllImage' : 'lineImages', index));
   container.append(group);
 }
 function hexCard(hex, label, values, isChanged) {
@@ -148,10 +156,10 @@ function hexCard(hex, label, values, isChanged) {
   text.append(
     el('span', 'small-label', `${label} / 第 ${hex.number} 卦`),
     el('h3', '', hex.name), el('p', 'hex-title', `${hex.title} · ${trigramText(hex)}`),
-    commentaryBlock('卦辞', hex.judgment), commentaryBlock('彖传', hex.tuan),
-    commentaryBlock('象传 · 大象', hex.image), sourceLink(hex),
+    commentaryBlock('卦辞', hex.judgment, 'h4', hex, 'judgment'), commentaryBlock('彖传', hex.tuan, 'h4', hex, 'tuan'),
+    commentaryBlock('象传 · 大象', hex.image, 'h4', hex, 'image'), sourceLink(hex),
   );
-  card.append(diagram, text); return card;
+  card.append(diagram, text, bookOverview(hex)); return card;
 }
 function renderReading(record) {
   $('#result-date').textContent = dateText(record.createdAt);
@@ -168,13 +176,15 @@ function renderReading(record) {
     const group = el('div', 'line-with-image');
     const p = el('p', 'moving-text');
     p.append(el('strong', '', `${positions[i]}爻 · ${lineNames[values[i]]}  `), document.createTextNode(original.lines[i]));
-    group.append(p, lineImage(original.lineImages[i])); reading.append(group);
+    group.append(p);
+    appendBookDisclosure(group, original.number, 'lines', i);
+    group.append(lineImage(original.lineImages[i], original, 'lineImages', i)); reading.append(group);
   });
-  if (movingIndices.length === 6 && original.useAll) appendLineWithImage(reading, original.useAll, original.useAllImage, 'moving-text');
+  if (movingIndices.length === 6 && original.useAll) appendLineWithImage(reading, original.useAll, original.useAllImage, 'moving-text', original);
   const all = el('details', 'all-lines');
   all.append(el('summary', '', '展开本卦六爻与小象 ＋'));
-  original.lines.forEach((line, i) => appendLineWithImage(all, line, original.lineImages[i], 'yao-text'));
-  if (original.useAll) appendLineWithImage(all, original.useAll, original.useAllImage, 'yao-text');
+  original.lines.forEach((line, i) => appendLineWithImage(all, line, original.lineImages[i], 'yao-text', original, i));
+  if (original.useAll) appendLineWithImage(all, original.useAll, original.useAllImage, 'yao-text', original);
   reading.append(all);
   const body = $('#audit-body'); body.replaceChildren();
   record.lines.forEach((line, i) => line.steps.forEach((step, j) => {
@@ -194,12 +204,12 @@ function openHexagram(hex) {
   const title = el('div'); const heading = el('h2', '', hex.title); heading.id = 'dialog-hex-title';
   title.append(el('span', 'small-label', `第 ${hex.number} 卦 · ${trigramText(hex)}`), heading);
   head.append(symbol, title);
-  content.append(head, commentaryBlock('卦辞', hex.judgment, 'h3'), commentaryBlock('彖传', hex.tuan, 'h3'), commentaryBlock('象传 · 大象', hex.image, 'h3'));
+  content.append(head, commentaryBlock('卦辞', hex.judgment, 'h3', hex, 'judgment'), commentaryBlock('彖传', hex.tuan, 'h3', hex, 'tuan'), commentaryBlock('象传 · 大象', hex.image, 'h3', hex, 'image'));
   const lines = el('section', 'dialog-lines');
   lines.append(el('h3', 'commentary-label', '爻辞与小象'));
-  hex.lines.forEach((line, i) => appendLineWithImage(lines, line, hex.lineImages[i], 'dialog-yao'));
-  if (hex.useAll) appendLineWithImage(lines, hex.useAll, hex.useAllImage, 'dialog-yao');
-  content.append(lines);
+  hex.lines.forEach((line, i) => appendLineWithImage(lines, line, hex.lineImages[i], 'dialog-yao', hex, i));
+  if (hex.useAll) appendLineWithImage(lines, hex.useAll, hex.useAllImage, 'dialog-yao', hex);
+  content.append(lines, bookOverview(hex, 'h3'));
   content.append(sourceLink(hex, 'dialog-source'));
   $('#hexagram-dialog').showModal();
 }
