@@ -93,6 +93,7 @@ h2 { max-width: 100%; overflow-wrap: anywhere; font: 400 2rem/1.25 var(--serif);
 .venue-list li { font-size: .9375rem; }
 .venue-list span { display: block; color: var(--muted); font-size: .8125rem; margin-top: 1px; }
 .beyond { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 25px; padding: 25px 0; }
+.beyond + .beyond { border-top: 1px solid var(--line); }
 .beyond h3 { margin-bottom: 5px; font-size: 1.0625rem; font-weight: 600; }
 .beyond p { color: var(--muted); font-size: .9375rem; }
 .beyond p a { color: inherit; }
