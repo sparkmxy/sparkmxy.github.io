@@ -125,12 +125,32 @@ function trigramText(hex) {
   const upper = TRIGRAMS.find(t => t.bits === hex.bits.slice(3));
   return upper && lower ? `${upper.name}上 · ${lower.name}下` : hex.title;
 }
+function commentaryBlock(label, text, headingTag = 'h4') {
+  const section = el('section', 'hex-commentary');
+  section.append(el(headingTag, 'commentary-label', label), el('p', 'commentary-text', text));
+  return section;
+}
+function lineImage(text) {
+  const p = el('p', 'line-image');
+  p.append(el('span', 'commentary-label', '象传 · 小象'), document.createTextNode(text));
+  return p;
+}
+function appendLineWithImage(container, text, image, className) {
+  const group = el('div', 'line-with-image');
+  group.append(el('p', className, text), lineImage(image));
+  container.append(group);
+}
 function hexCard(hex, label, values, isChanged) {
   const card = el('article', 'hex-card');
   const diagram = el('div', 'stage-lines');
   drawLines(diagram, values, 6, !isChanged);
   const text = el('div');
-  text.append(el('span', 'small-label', `${label} / 第 ${hex.number} 卦`), el('h3', '', hex.name), el('p', 'hex-title', `${hex.title} · ${trigramText(hex)}`), el('p', 'judgment', hex.judgment), sourceLink(hex));
+  text.append(
+    el('span', 'small-label', `${label} / 第 ${hex.number} 卦`),
+    el('h3', '', hex.name), el('p', 'hex-title', `${hex.title} · ${trigramText(hex)}`),
+    commentaryBlock('卦辞', hex.judgment), commentaryBlock('彖传', hex.tuan),
+    commentaryBlock('象传 · 大象', hex.image), sourceLink(hex),
+  );
   card.append(diagram, text); return card;
 }
 function renderReading(record) {
@@ -143,16 +163,18 @@ function renderReading(record) {
   $('#hexagram-pair').replaceChildren(hexCard(original, '本卦', values, false), hexCard(changed, movingIndices.length ? '之卦' : '之卦 · 不变', changedValues, true));
   const reading = $('#reading-text'); reading.replaceChildren();
   reading.append(el('h3', '', movingIndices.length ? `${movingIndices.length} 爻动 · 参读爻辞` : '六爻皆静 · 参读卦辞'));
-  reading.append(el('p', 'reading-intro', movingIndices.length ? '朱色为动爻，老阴变阳，老阳变阴。以下列出本卦动爻，结合两卦卦辞参读。' : '本卦与之卦相同。此时可从本卦卦辞出发，观照所问之事。'));
+  reading.append(el('p', 'reading-intro', movingIndices.length ? '朱色为动爻，老阴变阳，老阳变阴。以下将本卦动爻与对应小象并列，结合两卦卦辞、彖传与大象参读。' : '本卦与之卦相同。可结合卦辞、彖传与大象，观照所问之事。'));
   movingIndices.forEach(i => {
+    const group = el('div', 'line-with-image');
     const p = el('p', 'moving-text');
-    p.append(el('strong', '', `${positions[i]}爻 · ${lineNames[values[i]]}  `), document.createTextNode(original.lines[i])); reading.append(p);
+    p.append(el('strong', '', `${positions[i]}爻 · ${lineNames[values[i]]}  `), document.createTextNode(original.lines[i]));
+    group.append(p, lineImage(original.lineImages[i])); reading.append(group);
   });
-  if (movingIndices.length === 6 && original.useAll) reading.append(el('p', 'moving-text', original.useAll));
+  if (movingIndices.length === 6 && original.useAll) appendLineWithImage(reading, original.useAll, original.useAllImage, 'moving-text');
   const all = el('details', 'all-lines');
-  all.append(el('summary', '', '展开本卦六爻经文 ＋'));
-  original.lines.forEach(line => all.append(el('p', '', line)));
-  if (original.useAll) all.append(el('p', '', original.useAll));
+  all.append(el('summary', '', '展开本卦六爻与小象 ＋'));
+  original.lines.forEach((line, i) => appendLineWithImage(all, line, original.lineImages[i], 'yao-text'));
+  if (original.useAll) appendLineWithImage(all, original.useAll, original.useAllImage, 'yao-text');
   reading.append(all);
   const body = $('#audit-body'); body.replaceChildren();
   record.lines.forEach((line, i) => line.steps.forEach((step, j) => {
@@ -171,9 +193,13 @@ function openHexagram(hex) {
   const symbol = el('span', 'hex-symbol', String.fromCodePoint(0x4dc0 + hex.number - 1)); symbol.setAttribute('aria-hidden', 'true');
   const title = el('div'); const heading = el('h2', '', hex.title); heading.id = 'dialog-hex-title';
   title.append(el('span', 'small-label', `第 ${hex.number} 卦 · ${trigramText(hex)}`), heading);
-  head.append(symbol, title); content.append(head, el('p', 'dialog-judgment', hex.judgment));
-  hex.lines.forEach(line => content.append(el('p', 'dialog-yao', line)));
-  if (hex.useAll) content.append(el('p', 'dialog-yao', hex.useAll));
+  head.append(symbol, title);
+  content.append(head, commentaryBlock('卦辞', hex.judgment, 'h3'), commentaryBlock('彖传', hex.tuan, 'h3'), commentaryBlock('象传 · 大象', hex.image, 'h3'));
+  const lines = el('section', 'dialog-lines');
+  lines.append(el('h3', 'commentary-label', '爻辞与小象'));
+  hex.lines.forEach((line, i) => appendLineWithImage(lines, line, hex.lineImages[i], 'dialog-yao'));
+  if (hex.useAll) appendLineWithImage(lines, hex.useAll, hex.useAllImage, 'dialog-yao');
+  content.append(lines);
   content.append(sourceLink(hex, 'dialog-source'));
   $('#hexagram-dialog').showModal();
 }
