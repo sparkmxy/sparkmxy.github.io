@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { BOOK_NOTES, BOOK_SOURCE } from '../book-notes.mjs';
-import { HEXAGRAMS } from '../hexagrams.mjs';
+import { HEXAGRAMS, TRIGRAMS } from '../hexagrams.mjs';
+import { BOOK_GLYPHS } from '../book-glyphs.mjs';
+import { statSync } from 'node:fs';
 
 const keys = Object.keys(BOOK_NOTES).map(Number).sort((a, b) => a - b);
 const upperPrintedStarts = [1,16,27,34,40,46,52,57,62,68,73,79,85,90,95,100,105,110,115,120,126,132,138,143,149,154,160,165,170,176,181,187,192,197,202,208,214,219];
@@ -143,4 +145,47 @@ test('reconstructed scan passages and corrected printed typo are explicitly iden
   const corrected = BOOK_NOTES[50].lines[2];
   assert.match(text(corrected.translation), /^九三/);
   assert.match(corrected.translationNote, /原扫描作“九四”/);
+});
+
+test('book trigram symbols agree with the six-line hexagrams', () => {
+  for (const hex of HEXAGRAMS) {
+    const lower = TRIGRAMS.find(trigram => trigram.bits === hex.bits.slice(0, 3));
+    const upper = TRIGRAMS.find(trigram => trigram.bits === hex.bits.slice(3));
+    const intro = BOOK_NOTES[hex.number].judgment.notes[0];
+    for (const trigram of [lower, upper]) {
+      assert.ok(intro.includes(`${trigram.name}（${trigram.symbol}）`), `${hex.number}: ${trigram.name}`);
+    }
+    if (lower !== upper) assert.ok(intro.indexOf(lower.symbol) < intro.indexOf(upper.symbol), `${hex.number}: bottom-to-top order`);
+  }
+});
+
+test('proofread book paragraphs have complete delimiters and retain only toned pinyin', () => {
+  for (const book of Object.values(BOOK_NOTES)) {
+    const entries = passages(book).flatMap(([field, p]) => ['translation', 'notes', 'explanation'].flatMap(key =>
+      p[key].map((value, i) => [`${book.number}.${field}.${key}.${i}`, value])));
+    entries.push(...book.overview.map((value, i) => [`${book.number}.overview.${i}`, value]));
+    for (const [label, value] of entries) {
+      assert.match(value, /[。！？）)》”’]$/u, `${label}: abrupt ending`);
+      assert.doesNotMatch(value, /[，、；：][”’）]*$|[�□■「」『』]|\(cid:/u, label);
+      for (const [open, close] of [['“', '”'], ['‘', '’'], ['《', '》']]) {
+        assert.equal([...value].filter(c => c === open).length, [...value].filter(c => c === close).length, `${label}: ${open}${close}`);
+      }
+      assert.equal([...value].filter(c => '（('.includes(c)).length, [...value].filter(c => '）)'.includes(c)).length, `${label}: parentheses`);
+      for (const [token] of value.matchAll(/[A-Za-z\u00c0-\u024f\u1e00-\u1eff]+/gu)) {
+        assert.match(token, /^[a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]+$/u, `${label}: ${token}`);
+        assert.match(token, /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/u, `${label}: unreviewed Latin token ${token}`);
+      }
+    }
+  }
+});
+
+test('every historical glyph marker has a source crop and page provenance', () => {
+  const markers = new Set(JSON.stringify(BOOK_NOTES).match(/〔[^〕]*字形〕/gu));
+  assert.deepEqual([...markers].sort(), Object.keys(BOOK_GLYPHS).sort());
+  for (const marker of markers) {
+    const glyph = BOOK_GLYPHS[marker];
+    assert.ok(statSync(new URL(`../assets/book/${glyph.file}`, import.meta.url)).size > 100, marker);
+    assert.ok(['upper', 'lower'].includes(glyph.volume));
+    assert.ok(Number.isInteger(glyph.page) && glyph.page > 0);
+  }
 });

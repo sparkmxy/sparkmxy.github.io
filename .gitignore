@@ -1,0 +1,3 @@
+# Local PDF proofreading cache; original documents are not website assets.
+/tmp/pdfs/iching-proof-20260921/
+/scripts/iching-book/__pycache__/

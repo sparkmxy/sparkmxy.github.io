@@ -46,7 +46,12 @@ def main():
     ] for item in read(name)]
     overviews = read('overviews.json')
     shared = read('audit-notes.json')['qianCombinedLineImages']
+    proofread = read('proofread-20260922.json')
     mismatches = []
+    for item in proofread:
+        key, field = item['field'].rsplit('.', 1)
+        if passage(data, dict(number=item['number'], key=key))[field] != item['after']:
+            mismatches.append(f"{item['number']}/{item['field']}/proofread")
     for item in translations:
         target = passage(data, item)
         for field in ['translation', 'translationNote']:
@@ -61,6 +66,7 @@ def main():
             mismatches.append(f'1/shared-image/{i}')
     if args.check:
         print(f'Checked {len(translations) + 7} translations and {len(overviews)} overviews.')
+        print(f'Checked {len(proofread)} proofread annotation fields.')
         if mismatches:
             raise SystemExit('Mismatch: ' + ', '.join(mismatches))
         print('All manually transcribed fields match their saved sources.')
@@ -99,6 +105,10 @@ def main():
         for field in ['notes', 'explanation', 'pages', 'noteScope']:
             target[field] = shared[field]
         target['translation'] = [translation]
+    # Source-checked proofreading takes precedence over older OCR cleanup.
+    for item in proofread:
+        key, field = item['field'].rsplit('.', 1)
+        passage(data, dict(number=item['number'], key=key))[field] = item['after']
     result = header + 'export const BOOK_SOURCE = ' + json.dumps(metadata, ensure_ascii=False, indent=2)
     result += ';\n\nexport const BOOK_NOTES = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
     args.output.parent.mkdir(parents=True, exist_ok=True)

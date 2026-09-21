@@ -46,3 +46,12 @@
 .line-image-group{margin-top:13px}
 @media(max-width:640px){.book-notes-body{padding:11px}.book-overview>p{line-height:2}.book-overview>.book-citation{font-size:10px}.book-notes>summary{padding-inline:9px}.book-source-note{font-size:11px;padding:11px 13px}}
 .book-notes-body p.book-subheading{margin:0 0 8px;font-size:11px;font-weight:500;color:#506249;letter-spacing:1px}.book-notes-body .book-note-scope{font-size:11px;border-left:2px solid #a9b797;padding-left:9px;margin:0 0 13px}
+.book-source-glyph {
+  display: inline-block;
+  height: 1.25em;
+  width: auto;
+  max-width: 2em;
+  vertical-align: -0.2em;
+  margin-inline: 0.08em;
+  mix-blend-mode: multiply;
+}

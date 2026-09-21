@@ -1,4 +1,5 @@
 import { BOOK_NOTES, BOOK_SOURCE } from './book-notes.mjs';
+import { appendBookText } from './book-glyphs.mjs';
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -10,7 +11,9 @@ function element(tag, className, text) {
 function paragraphs(parent, text, className = '') {
   const items = Array.isArray(text) ? text : text ? [text] : [];
   items.filter(value => typeof value === 'string' && value.trim()).forEach(value => {
-    parent.append(element('p', className, value));
+    const paragraph = element('p', className);
+    appendBookText(paragraph, value);
+    parent.append(paragraph);
   });
 }
 
