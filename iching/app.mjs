@@ -2,6 +2,8 @@ import { createCast, YARROW_MODEL } from './core.mjs';
 import { getEntropy } from './random.mjs';
 import { HEXAGRAMS, getHexagram, TRIGRAMS } from './hexagrams.mjs';
 import { appendBookDisclosure, bookOverview } from './book-ui.mjs';
+import { AI_ENDPOINT } from './ai-config.mjs';
+import { createAIReadingUI } from './ai-ui.mjs';
 
 const $ = (selector) => document.querySelector(selector);
 const positions = ['初', '二', '三', '四', '五', '上'];
@@ -15,6 +17,7 @@ let running = false;
 let playing = false;
 let toastTimer;
 let exportUrl = null;
+const aiReading = createAIReadingUI(document, AI_ENDPOINT);
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -58,6 +61,7 @@ function setLocked(locked) {
   if ($('#history-dialog').open) renderHistory();
 }
 function resetStage() {
+  aiReading.reset();
   revealed = 0; drawLines($('#stage-lines'), Array(6).fill(7), 0);
   $('#stage-title').textContent = '静候随机';
   $('#stage-description').textContent = '正在取得本次占筮所用的随机数…';
@@ -162,6 +166,7 @@ function hexCard(hex, label, values, isChanged) {
   card.append(diagram, text, bookOverview(hex)); return card;
 }
 function renderReading(record) {
+  aiReading.showReading(record);
   $('#result-date').textContent = dateText(record.createdAt);
   $('#result-question').textContent = record.question;
   $('#result-question').hidden = !record.question;

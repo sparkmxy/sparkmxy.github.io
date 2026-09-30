@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "iching-ai",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-30",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://sparkmxy.github.io,http://127.0.0.1:4173,http://localhost:4173",
+    "GEMINI_MODEL": "gemini-3.5-flash-lite"
+  },
+  "ratelimits": [
+    { "name": "AI_RATE_LIMITER", "namespace_id": "649301", "simple": { "limit": 3, "period": 60 } },
+    { "name": "AI_GLOBAL_LIMITER", "namespace_id": "649302", "simple": { "limit": 20, "period": 60 } }
+  ],
+  "observability": { "enabled": false }
+}

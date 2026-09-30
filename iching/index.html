@@ -8,6 +8,7 @@
   <title>静观 · 周易蓍草占筮</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./ai.css">
   <script type="module" src="./app.mjs"></script>
 </head>
 <body>
@@ -33,7 +34,7 @@
         <form id="cast-form" class="question-panel">
           <div class="panel-heading"><span class="small-label">问 · 所系之事</span><span class="optional">可不填写</span></div>
           <label class="sr-only" for="question">心中所问</label><textarea id="question" maxlength="200" rows="3" placeholder="此刻，你心中有何疑问？"></textarea>
-          <div class="question-foot"><span>所问之事留在此页，不发送给随机服务。</span><span id="question-count">0 / 200</span></div>
+          <div class="question-foot"><span>起卦不发送提问；使用 AI 解卦时才发送。</span><span id="question-count">0 / 200</span></div>
           <fieldset class="source-field"><legend>随机之源 <a href="#randomness" aria-label="了解随机来源">ⓘ</a></legend>
             <label class="source-option"><input type="radio" name="source" value="random-org" checked><span><strong>RANDOM.ORG</strong><small>大气噪声 · 公共接口，无需密钥</small></span><span class="source-tag">默认来源</span></label>
             <label class="source-option"><input type="radio" name="source" value="random-org-api"><span><strong>RANDOM.ORG API</strong><small>新版接口 · 使用自己的 API Key</small></span><span class="source-tag">个人密钥</span></label>
@@ -49,10 +50,27 @@
           <div id="stage-lines" class="stage-lines" aria-label="六爻自下而上生成"></div>
           <p id="stage-title" class="stage-title">虚位以待</p><p id="stage-description" class="stage-description" aria-live="polite">收拢思绪，让一卦从此刻开始。</p>
           <div class="stage-controls" id="stage-controls" hidden><button id="next-step" class="secondary-button" type="button">行下一变</button><button id="finish-cast" class="text-button" type="button">自动完成 →</button></div>
+          <div id="ai-controls" class="ai-controls" hidden>
+            <button id="ai-interpret" class="secondary-button ai-button" type="button" aria-controls="ai-panel" aria-describedby="ai-privacy">AI 解卦</button>
+            <p id="ai-question-note" class="field-note"></p>
+            <p id="ai-privacy" class="ai-privacy">点击后，将本次提问与卦象发送至 Cloudflare 和 Google Gemini 生成解读。</p>
+          </div>
           <div class="stage-legend"><span><i class="legend-line"></i> 阳</span><span><i class="legend-line yin"></i> 阴</span><span><i class="legend-dot"></i> 动爻</span></div>
         </div>
       </div>
       <noscript><p class="error-message">此页需要 JavaScript 才能起卦。请在浏览器中启用 JavaScript。</p></noscript>
+    </section>
+
+    <section id="ai-panel" class="wrap ai-section" hidden aria-labelledby="ai-title" tabindex="-1" aria-busy="false">
+      <div class="ai-card">
+        <div class="ai-heading"><div><span class="small-label">以易为镜 · GEMINI</span><h2 id="ai-title">AI 解卦</h2></div><span id="ai-meta" class="muted"></span></div>
+        <p id="ai-question" class="ai-question"></p>
+        <p id="ai-status" class="field-note" role="status" aria-live="polite"></p>
+        <p id="ai-error" class="error-message" role="alert" hidden></p>
+        <div id="ai-answer" class="ai-answer"></div>
+        <p id="ai-partial" class="field-note" hidden>本次解读达到篇幅上限，内容可能尚未结束，可以重新解读。</p>
+        <div class="ai-footer"><p class="field-note">AI 解读供阅读与自省，可能有误，请结合下方经传原文参看。</p><button id="ai-cancel" class="text-button" type="button" hidden>停止等待</button><button id="ai-retry" class="text-button" type="button" hidden>重新解读 ↻</button></div>
+      </div>
     </section>
 
     <section id="result" class="wrap result-section" hidden aria-labelledby="result-title" tabindex="-1">

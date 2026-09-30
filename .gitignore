@@ -1,3 +1,15 @@
 # Local PDF proofreading cache; original documents are not website assets.
 /tmp/pdfs/iching-proof-20260921/
 /scripts/iching-book/__pycache__/
+
+# Worker credentials and local development artifacts.
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+!**/.dev.vars.example
+!**/.env.example
+node_modules/
+.wrangler/
+.pnpm-store/
+/workers/iching-ai/dist/
