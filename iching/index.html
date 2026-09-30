@@ -37,10 +37,8 @@
           <div class="question-foot"><span>起卦不发送提问；使用 AI 解卦时才发送。</span><span id="question-count">0 / 200</span></div>
           <fieldset class="source-field"><legend>随机之源 <a href="#randomness" aria-label="了解随机来源">ⓘ</a></legend>
             <label class="source-option"><input type="radio" name="source" value="random-org" checked><span><strong>RANDOM.ORG</strong><small>大气噪声 · 公共接口，无需密钥</small></span><span class="source-tag">默认来源</span></label>
-            <label class="source-option"><input type="radio" name="source" value="random-org-api"><span><strong>RANDOM.ORG API</strong><small>新版接口 · 使用自己的 API Key</small></span><span class="source-tag">个人密钥</span></label>
             <label class="source-option"><input type="radio" name="source" value="web-crypto"><span><strong>本机安全随机</strong><small>Web Crypto · 无需联网</small></span><span class="source-tag">本机来源</span></label>
           </fieldset>
-          <div id="api-key-field" hidden><label class="key-label" for="api-key">RANDOM.ORG API Key</label><input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="输入你自己的 API Key"><p class="field-note">仅用于本次页面会话，直接发送至 RANDOM.ORG，不写入卦记。<a href="https://api.random.org/" target="_blank" rel="noopener noreferrer">获取密钥 ↗</a></p></div>
           <div class="cast-actions"><button class="primary-button" id="start-button" type="submit">开始起卦 <span aria-hidden="true">↗</span></button><button class="secondary-button" id="manual-button" type="button">逐变揲蓍</button></div>
           <p class="form-note">五十取一，虚一以待。余四十九，分合成象。</p>
           <p id="cast-error" class="error-message" role="alert" hidden></p>
@@ -53,7 +51,7 @@
           <div id="ai-controls" class="ai-controls" hidden>
             <button id="ai-interpret" class="secondary-button ai-button" type="button" aria-controls="ai-panel" aria-describedby="ai-privacy">AI 解卦</button>
             <p id="ai-question-note" class="field-note"></p>
-            <p id="ai-privacy" class="ai-privacy">点击后，将本次提问与卦象发送至 Cloudflare 和 Google Gemini 生成解读。</p>
+            <p id="ai-privacy" class="ai-privacy">点击后，自动选择可用线路，将本次提问与卦象经 Appwrite 或 Cloudflare 发送至 Google Gemini 生成解读。</p>
           </div>
           <div class="stage-legend"><span><i class="legend-line"></i> 阳</span><span><i class="legend-line yin"></i> 阴</span><span><i class="legend-dot"></i> 动爻</span></div>
         </div>
@@ -90,7 +88,7 @@
         <article><span class="method-index">三</span><h3>归奇于扐</h3><p>整除时以四为余。合起挂一与两束余蓍，置于一旁，即成一变。</p></article>
         <article><span class="method-index">四</span><h3>三变成爻</h3><p>余蓍再行两变，除以四得六、七、八、九。每爻重取四十九蓍，自下而上成卦。</p></article>
       </div>
-      <details class="method-details" id="randomness"><summary>关于随机性与数字化筮法 <span>＋</span></summary><div class="method-detail-body"><p>《筮仪》记述首变奇偶为三比一，后两变奇偶各半。此页每变先等概率选择左束除四的余数（一至四），再从满足该余数的合法分束中等概率取一组，完整演算挂一与归奇。它是依原文比例构造的数字模型，不是假定所有分束位置等概率。所得老阴、少阳、少阴、老阳概率分别为 1/16、5/16、7/16、3/16。</p><p id="random-source-explanation">本机模式使用 Web Crypto 的 crypto.getRandomValues，由浏览器提供密码学安全随机数；它不等同于可独立验证的物理真随机。RANDOM.ORG 模式连接其大气噪声随机服务。公共免密钥接口为官方旧版 HTTP 接口，新版 JSON-RPC 需自备 API Key。各来源均以拒绝采样避免取模偏差，连接失败会明确报错，不自动更换随机源。</p><p>可导出本次原始随机数和十八变记录以复算。记录用于检查计算过程，不构成第三方签名证明。解读区提供本卦、之卦的卦辞、彖传与大象，以及动爻的爻辞和小象，供参读与自省。</p><div class="source-links"><a href="https://api.random.org/" target="_blank" rel="noopener noreferrer">RANDOM.ORG API ↗</a><a href="https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-getRandomValues" target="_blank" rel="noopener noreferrer">Web Crypto 标准 ↗</a></div></div></details>
+      <details class="method-details" id="randomness"><summary>关于随机性与数字化筮法 <span>＋</span></summary><div class="method-detail-body"><p>《筮仪》记述首变奇偶为三比一，后两变奇偶各半。此页每变先等概率选择左束除四的余数（一至四），再从满足该余数的合法分束中等概率取一组，完整演算挂一与归奇。它是依原文比例构造的数字模型，不是假定所有分束位置等概率。所得老阴、少阳、少阴、老阳概率分别为 1/16、5/16、7/16、3/16。</p><p id="random-source-explanation">本机模式使用 Web Crypto 的 crypto.getRandomValues，由浏览器提供密码学安全随机数；它不等同于可独立验证的物理真随机。RANDOM.ORG 模式通过无需密钥的公共 HTTP 接口连接其大气噪声随机服务。各来源均以拒绝采样避免取模偏差，连接失败会明确报错，不自动更换随机源。</p><p>可导出本次原始随机数和十八变记录以复算。记录用于检查计算过程，不构成第三方签名证明。解读区提供本卦、之卦的卦辞、彖传与大象，以及动爻的爻辞和小象，供参读与自省。</p><div class="source-links"><a href="https://www.random.org/clients/http/" target="_blank" rel="noopener noreferrer">RANDOM.ORG 公共接口 ↗</a><a href="https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-getRandomValues" target="_blank" rel="noopener noreferrer">Web Crypto 标准 ↗</a></div></div></details>
     </section>
 
     <section class="library-section wrap" id="library" aria-labelledby="library-title"><div class="section-top"><div><span class="section-number">03 /</span><h2 id="library-title">六十四卦</h2></div><span class="muted">天地万象，皆在其中。</span></div><div class="library-toolbar"><p>循文王卦序，合读卦爻辞与彖象。</p><label class="search-field"><span aria-hidden="true">⌕</span><input id="hexagram-search" type="search" placeholder="寻一卦 · 卦名或序号" aria-label="搜索卦名或序号"></label></div><p class="book-source-note">译注据黄寿祺、张善文《周易译注》（上海古籍出版社，2007 年）上下册整理，覆盖六十四卦。注释据原书 OCR 整理，若有错漏还请见谅。</p><div class="hexagram-library" id="hexagram-library"></div><p id="library-empty" class="muted" hidden>未找到此卦，试试卦名或 1–64 的序号。</p></section>

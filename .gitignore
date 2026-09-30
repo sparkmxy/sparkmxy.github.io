@@ -13,3 +13,4 @@ node_modules/
 .wrangler/
 .pnpm-store/
 /workers/iching-ai/dist/
+/appwrite/iching-probe/dist/

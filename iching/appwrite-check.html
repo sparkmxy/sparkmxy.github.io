@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>第二条线路验证 · 静观</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./appwrite-check.css">
+  <script type="module" src="./appwrite-check.mjs"></script>
+</head>
+<body>
+  <main>
+    <header><a href="./">静观 · 周易</a><span>连接验证</span></header>
+    <p class="eyebrow">APPWRITE · SINGAPORE</p>
+    <h1>先确认，路是通的。</h1>
+    <p class="intro">依次检查 Appwrite 入口、Gemini 连接和完整解卦。这里使用固定示例，不提交你的占卜问题。</p>
+    <section class="card" aria-labelledby="setup-title">
+      <h2 id="setup-title">准备连接</h2>
+      <label for="endpoint">Appwrite 函数地址</label>
+      <input id="endpoint" type="url" value="https://iching-probe.sgp.appwrite.run" placeholder="https://你的函数.sgp.appwrite.run" autocomplete="off" spellcheck="false">
+      <p class="hint">复制函数 Domains 中以 .sgp.appwrite.run 结尾的完整 HTTPS 地址。</p>
+      <label for="network">这次使用的网络</label>
+      <select id="network">
+        <option value="unknown">尚未确认</option>
+        <option value="direct">中国大陆网络，已关闭 VPN 和代理</option>
+        <option value="proxy">正在使用 VPN / 代理</option>
+        <option value="overseas">中国大陆以外的网络</option>
+      </select>
+      <p class="hint">这是你对网络状态的记录。网页无法自行证明是否经过 VPN；更换网络后请重新检查。</p>
+      <button id="health" type="button">① 检查 Appwrite 入口</button>
+      <p id="health-result" class="result" role="status" aria-live="polite">尚未检查。</p>
+    </section>
+    <section class="card" aria-labelledby="gemini-title">
+      <h2 id="gemini-title">验证 Gemini</h2>
+      <label for="token">测试口令 · PROBE_TOKEN</label>
+      <input id="token" type="password" maxlength="128" autocomplete="off" spellcheck="false" aria-describedby="token-help">
+      <p class="hint" id="token-help">填入 Appwrite 中设置的测试口令，至少 32 位字母、数字、短横线或下划线。这里不填写 Gemini API key。口令只保留在本页内存，刷新即清除。</p>
+      <div class="token-tools"><button id="generate" class="secondary" type="button">生成测试口令</button><button id="copy-token" class="secondary" type="button">复制口令</button><span id="token-status" role="status"></span></div>
+      <button id="probe" type="button" disabled>② 检查 Gemini 调用</button>
+      <p id="probe-result" class="result" role="status" aria-live="polite">先完成入口检查，再测试 Gemini。</p>
+    </section>
+    <section class="card" aria-labelledby="reading-title">
+      <h2 id="reading-title">验证完整解卦</h2>
+      <p class="hint">固定示例：“面对新的合作机会，我应如何稳妥推进？”使用节卦初爻变的完整经传与正式提示词。每次点击会调用一次 Gemini。</p>
+      <button id="reading" type="button" disabled>③ 测试完整解卦</button>
+      <p id="reading-result" class="result" role="status" aria-live="polite">上传新版部署包并检查入口后可用。</p>
+      <details id="reading-details" hidden><summary>展开本次测试解读</summary><p id="reading-answer" class="result"></p></details>
+    </section>
+    <section class="card" aria-labelledby="record-title">
+      <h2 id="record-title">本次验证记录</h2>
+      <p id="summary">等待检查。仅入口连通，不代表 Gemini 已可用。</p>
+      <button id="copy-report" class="secondary" type="button">复制无密钥的检查记录</button>
+      <p id="copy-status" class="hint" role="status"></p>
+    </section>
+    <footer>完整解卦通过后，再开启公开线路。自动选线只会采用已就绪的接口。</footer>
+  </main>
+</body>
+</html>

@@ -2,7 +2,8 @@ import { createCast, YARROW_MODEL } from './core.mjs';
 import { getEntropy } from './random.mjs';
 import { HEXAGRAMS, getHexagram, TRIGRAMS } from './hexagrams.mjs';
 import { appendBookDisclosure, bookOverview } from './book-ui.mjs';
-import { AI_ENDPOINT } from './ai-config.mjs';
+import { AI_ENDPOINT, AI_ROUTES } from './ai-config.mjs';
+import { createRoutedInterpretation } from './ai-routing.mjs';
 import { createAIReadingUI } from './ai-ui.mjs';
 
 const $ = (selector) => document.querySelector(selector);
@@ -17,7 +18,7 @@ let running = false;
 let playing = false;
 let toastTimer;
 let exportUrl = null;
-const aiReading = createAIReadingUI(document, AI_ENDPOINT);
+const aiReading = createAIReadingUI(document, AI_ENDPOINT, createRoutedInterpretation(AI_ROUTES));
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -74,7 +75,7 @@ async function startCast(manual) {
   $('#result').hidden = true;
   const source = $('input[name="source"]:checked').value;
   try {
-    const entropy = await getEntropy(source, { apiKey: $('#api-key').value.trim() });
+    const entropy = await getEntropy(source);
     const cast = createCast(entropy.drawInt);
     current = {
       version: 1, createdAt: new Date().toISOString(), question: $('#question').value.trim(),
@@ -294,8 +295,7 @@ $('#next-step').addEventListener('click', advanceStep);
 $('#finish-cast').addEventListener('click', playRemaining);
 $('#question').addEventListener('input', () => { $('#question-count').textContent = `${$('#question').value.length} / 200`; });
 document.querySelectorAll('input[name="source"]').forEach(input => input.addEventListener('change', () => {
-  const needsKey = $('input[name="source"]:checked').value === 'random-org-api';
-  $('#api-key-field').hidden = !needsKey; $('#api-key').required = needsKey; $('#cast-error').hidden = true;
+  $('#cast-error').hidden = true;
 }));
 $('#hexagram-search').addEventListener('input', event => renderLibrary(event.target.value));
 $('#history-button').addEventListener('click', () => { renderHistory(); $('#history-dialog').showModal(); });

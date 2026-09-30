@@ -35,11 +35,13 @@ export function createAIReadingUI(document, endpoint, request = requestInterpret
     panel.setAttribute('aria-busy', 'true');
     error.hidden = true; answer.textContent = ''; $('#ai-meta').textContent = ''; $('#ai-partial').hidden = true;
     try {
-      const result = await request(reading, { endpoint, signal });
+      const result = await request(reading, { endpoint, signal, onStatus(message) {
+        if (id === generation && !signal.aborted) status.textContent = message;
+      } });
       if (id !== generation) return;
       // Model output is always text, never HTML (including model-supplied links).
       answer.textContent = result.text;
-      $('#ai-meta').textContent = `由 Gemini 生成 · ${result.model}`;
+      $('#ai-meta').textContent = `由 Gemini 生成 · ${result.model}${result.route ? ` · ${result.route}` : ''}`;
       $('#ai-partial').hidden = !result.truncated;
       status.textContent = result.truncated ? '已收到部分解读。' : '解读已完成。';
       button.textContent = '查看 AI 解卦'; retry.hidden = false; completed = true;
