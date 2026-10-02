@@ -2,7 +2,9 @@
 
 ## 2026-10-02：塔罗共用接口升级
 
-新版 **1.2.0** 同时支持周易与塔罗；周易输入、接口地址、环境变量和限流保持兼容。Cloudflare 已升级，线上 Appwrite 目前仍是 1.1.0，需要在原函数 **Deployments → Create deployment → Manual** 上传 `dist/iching-appwrite-probe.tar.gz` 并激活。入口 `src/main.js`、构建 `npm install --omit=dev`、现有 Secret、`PUBLIC_AI_ENABLED=true`、Node.js 22、30 秒超时和 Firewall 全部沿用，**不要按下方早期试点步骤关闭当前公开接口**。
+新版 **1.2.0** 已由用户上传并激活，同时支持周易与塔罗；周易输入、接口地址、环境变量和限流保持兼容。2026-10-02 验证 `/ai/health` 返回 `ready:true`、`region:sgp`、`capabilities:["iching","tarot"]`；GitHub Pages 来源的 CORS 预检返回 204。原入口、构建命令、Secret、公开环境变量和 Firewall 沿用，**不要按下方早期试点步骤关闭当前公开接口**。
+
+实际 Gemini 请求验证成功：Appwrite 塔罗回答 701 字、未截断、端到端 4567ms，包含魔术师、死神逆位、星星的三张牌；旧周易格式返回 717 字、未截断、Gemini 耗时 3901ms。以 `CN` 选线提示调用页面共用路由模块，1157ms 选择 Appwrite。本次通过本机代理核验接口功能，不属于新的大陆直连测试；一次并行检查中 Appwrite 健康请求超过 10 秒，客户端正常回退到 Cloudflare，随后单独检查新加坡线路成功。
 
 重新生成上传包：`node scripts/package.mjs`。新版 `/ai/health` 在原字段之外返回 `capabilities: ["iching", "tarot"]`。塔罗网页只会选择声明支持塔罗的服务，未升级的 Appwrite 继续提供周易服务。[塔罗实现说明](../../tarot/README.md)。下方 1.1.0 的部署记录保留作为历史验证。
 
@@ -12,7 +14,7 @@
 
 **当前进度：升级步骤 1–5 已完成。公开 `/ai/health` 已返回 `ready:true`；正式 `/api/interpret` 实测返回 861 字、未截断、Gemini 耗时 4973ms，GitHub Pages 来源的 CORS 预检成功。四次空 JSON 检查中，第 4 次返回 429 且带 `X-Appwrite-WAF-Action: rateLimit`，确认平台限流生效；空 JSON 不调用 Gemini。网页按钮实测也已成功自动选线并显示解读（本次先连通的是 Cloudflare）。完整本地测试 107 项通过。部署包仍为已验证的 1.1.0 版本。**
 
-## 已有函数升级：现在需要的操作
+## 历史试点：从探针升级为公开周易接口
 
 1. 保留函数 `iching-probe` 和现有的 `GEMINI_API_KEY`、`PROBE_TOKEN`，上传新的 `dist/iching-appwrite-probe.tar.gz` 并激活。入口仍为 `src/main.js`，构建命令仍为 `npm install --omit=dev`，Node.js 22、Timeout 30 秒、Execute access `Any`、API scopes 不授予权限。此时不要添加 `PUBLIC_AI_ENABLED`。
 2. 如果旧检查页面还保留口令，先点击“复制口令”自行保存，再刷新检查页面并填回口令。依次检查入口，然后点击新增的“③ 测试完整解卦”。这个检查仅提交口令与空 JSON，服务器固定使用“面对新的合作机会，我应如何稳妥推进？”及节卦初爻变的完整提示词。不会发送你的个人问题。

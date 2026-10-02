@@ -34,7 +34,7 @@ node --test tarot/tests/*.test.mjs iching/tests/*.test.mjs appwrite/iching-probe
 
 新版健康接口包含 `capabilities: ["iching", "tarot"]`。塔罗跳过未升级的 Appwrite；旧部署仍可服务周易。已知大陆 IP 优先选择升级后的新加坡线路；未知地区先使用已连通线路。健康检查不调用 Gemini，每次点击最多发送一次生成请求，失败不自动换线路重发。
 
-Cloudflare 已于 2026-10-02 升级。Appwrite 需要上传一次新版包：
+Cloudflare 和 Appwrite 均已于 2026-10-02 升级。用户上传并激活 Appwrite 1.2.0 后，实际塔罗解读与旧周易解读均已验证成功；`/ai/health` 返回 `capabilities:["iching","tarot"]`，网页自动启用这条线路，无需再配置。以下保留今后重新生成和上传包的方法：
 
 ```powershell
 node appwrite/iching-probe/scripts/package.mjs
