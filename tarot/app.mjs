@@ -4,6 +4,9 @@ import {cardArt,cardBack,cardImageURL} from './art.mjs';
 import {TEXT,translate} from './i18n.mjs';
 import {browserLanguage,storedLanguage,lookupCountry,languageForCountry} from './locale.mjs';
 import {interpretTarot} from './ai-client.mjs';
+import {getCardKnowledge,summariseAttributes,KNOWLEDGE_SOURCES} from './knowledge.mjs';
+import {QUESTION_LIMIT} from './reading-request.mjs';
+import {makeExportSnapshot,renderReadingImage} from './image-export.mjs';
 
 const $=id=>document.getElementById(id);
 document.querySelector('.hero-copy .eyebrow').dataset.i18n='heroEyebrow';
@@ -14,7 +17,7 @@ let storage; try { storage=localStorage; } catch { /* Private browsers may block
 const manual=storedLanguage(storage);
 const state={lang:manual||browserLanguage(),manual:!!manual,source:manual?'manual':'browser',country:null,
   spread:'three',filter:'all',deck:[],draws:[],pending:null,reading:null,dialogCard:null,
-  ai:null,aiPhase:null,aiRoute:null,aiError:null,saved:false};
+  ai:null,aiPhase:null,aiRoute:null,aiError:null,aiResult:null,saved:false};
 const t=(key,values)=>translate(state.lang,key,values);
 function el(tag,className,text) { const node=document.createElement(tag); if(className)node.className=className; if(text!==undefined)node.textContent=text; return node; }
 function artFrame(id,reversed=false,className='card-frame') {
@@ -86,7 +89,7 @@ function renderTable() {
   }
 }
 function clearAI() {
-  state.ai?.abort();state.ai=null;state.aiPhase=null;state.aiRoute=null;state.aiError=null;
+  state.ai?.abort();state.ai=null;state.aiPhase=null;state.aiRoute=null;state.aiError=null;state.aiResult=null;
   $('ai-answer').textContent='';$('ai-panel').hidden=true;$('ai-partial').hidden=true;$('ai-start').disabled=false;
 }
 function begin(event) {
@@ -106,20 +109,40 @@ function pickCard(index) {
   renderTable();renderReading();
 }
 function bothNotes(card) {
+  const knowledge=getCardKnowledge(card.id);
   const details=el('details','card-meanings');details.append(el('summary','',t('bothMeanings')));
-  for(const key of ['upright','reversed']) { details.append(el('strong','',t(key)),el('p','',card[key][state.lang])); }
+  details.append(el('strong','',t('symbols')),el('p','',knowledge.symbols[state.lang]));
+  for(const key of ['upright','reversed']) { details.append(el('strong','',t(key)),el('p','',knowledge[key][state.lang])); }
+  details.append(el('strong','',t('reflection')),el('p','',knowledge.reflection[state.lang]));
   return details;
+}
+function cardAttributes(id){
+  const k=getCardKnowledge(id),list=el('dl','card-attributes');
+  for(const [key,value] of [['element',k.element?t(k.element):t('planetary')],['numberRole',k.numberRole[state.lang]],['astrology',k.astrology[state.lang]]]){
+    const row=el('div');row.append(el('dt','',t(key)),el('dd','',value));list.append(row);
+  }
+  return list;
+}
+function renderAttributeOverview(reading){
+  const overview=summariseAttributes(reading.cards,state.lang),section=$('attribute-overview');section.replaceChildren();
+  section.append(el('h3','',t('attributeOverview')));
+  const chips=el('div','element-chips');
+  for(const element of overview.elements)chips.append(el('span','element-chip '+element.key,element.name+' × '+element.count));
+  if(overview.planetary)chips.append(el('span','element-chip',t('planetaryCount',{count:overview.planetary})));
+  section.append(chips,el('p','small-note',t('overviewHelp')));
+  if(overview.repeatedNumbers.length)section.append(el('p','repeated-numbers',t('repeatedNumbers')+' '+overview.repeatedNumbers.map(([number,count])=>number+' × '+count).join(' · ')));
 }
 function renderReading() {
   const reading=state.reading;$('result').hidden=!reading;if(!reading)return;
   const spread=SPREADS[reading.spread];
   $('result-question').textContent=reading.question||t('noQuestion');$('result-date').textContent=formatDate(reading.createdAt);
+  renderAttributeOverview(reading);
   $('reading-cards').replaceChildren();
   reading.cards.forEach((draw,i)=>{
     const card=CARDS[draw.id],article=el('article','reading-card'),copy=el('div','reading-card-copy');
     article.append(artFrame(draw.id,draw.reversed));copy.append(el('p','card-position',`${String(i+1).padStart(2,'0')} / ${spread.positions[state.lang][i]}`));
     const heading=el('div','card-title-row');heading.append(el('h3','',card.name[state.lang]),el('span','orientation',t(draw.reversed?'reversed':'upright')));copy.append(heading);
-    copy.append(el('p','card-keywords',card.keywords[state.lang]),el('p','card-note',card[draw.reversed?'reversed':'upright'][state.lang]),bothNotes(card));
+    copy.append(el('p','card-keywords',card.keywords[state.lang]),cardAttributes(draw.id),el('p','card-note',getCardKnowledge(draw.id)[draw.reversed?'reversed':'upright'][state.lang]),bothNotes(card));
     article.append(copy);$('reading-cards').append(article);
   });
 }
@@ -138,10 +161,12 @@ function renderLibrary() {
   });
 }
 function renderCardDialog(id) {
-  const card=CARDS[id],content=$('card-dialog-content');content.replaceChildren();
+  const card=CARDS[id],knowledge=getCardKnowledge(id),content=$('card-dialog-content');content.replaceChildren();
   const art=artFrame(id,false,'dialog-art'),copy=el('div','dialog-content');
   const title=el('h2','',card.name[state.lang]);title.id='card-dialog-title';copy.append(el('p','eyebrow',t(card.suit)),title,el('p','card-keywords',card.keywords[state.lang]));
-  for(const key of ['upright','reversed'])copy.append(el('h3','',t(key)),el('p','',card[key][state.lang]));
+  copy.append(cardAttributes(id),el('h3','',t('symbols')),el('p','',knowledge.symbols[state.lang]),el('h3','',t('attributeLens')),el('p','',knowledge.lens[state.lang]));
+  for(const key of ['upright','reversed'])copy.append(el('h3','',t(key)),el('p','',knowledge[key==='upright'?'application':key][state.lang]));
+  copy.append(el('h3','',t('reflection')),el('p','',knowledge.reflection[state.lang]));
   const view=el('a','card-image-link',t('viewImage'));view.href=cardImageURL(id);view.target='_blank';view.rel='noopener noreferrer';copy.append(view);
   content.append(art,copy);
 }
@@ -187,6 +212,32 @@ function exportReading() {
   const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
   const link=el('a');link.href=url;link.download=`tarot-${reading.createdAt.slice(0,10)}-${reading.id.slice(0,8)}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('exported');
 }
+let imageURL=null,imageRun=0;
+function releaseImage(){
+  if(imageURL)URL.revokeObjectURL(imageURL);imageURL=null;
+  $('image-preview').removeAttribute('src');$('image-download').removeAttribute('href');
+}
+function imageBusy(busy){
+  document.querySelectorAll('[data-export-image]').forEach(button=>{button.disabled=busy;button.setAttribute('aria-busy',String(busy));});
+}
+async function exportImage(){
+  if(!state.reading)return;
+  const run=++imageRun;
+  const snapshot=makeExportSnapshot(state.reading,state.lang,state.aiResult);
+  releaseImage();imageBusy(true);$('image-preview').hidden=true;$('image-download').hidden=true;
+  $('image-zoom').hidden=true;$('image-preview-scroll').classList.remove('zoomed');$('image-zoom').textContent=t('imageZoom');
+  $('image-status').textContent=t('imageBusy');
+  if(!$('image-dialog').open)$('image-dialog').showModal();
+  try{
+    const result=await renderReadingImage(snapshot);
+    if(run!==imageRun)return;
+    imageURL=URL.createObjectURL(result.blob);$('image-preview').src=imageURL;$('image-preview').hidden=false;
+    $('image-download').href=imageURL;$('image-download').download=result.filename;$('image-download').hidden=false;
+    $('image-zoom').hidden=false;
+    $('image-status').textContent=t('imageReady',{width:result.width,height:result.height})+' · '+(snapshot.ai?t('imageHasAI'):t('imageNoAI'));
+  }catch{if(run===imageRun)$('image-status').textContent=t('imageFailed');}
+  finally{if(run===imageRun)imageBusy(false);}
+}
 function renderAI() {
   if(!state.aiPhase)return;
   $('ai-question').textContent=state.reading?.question||t('noQuestion');
@@ -206,6 +257,7 @@ async function startAI() {
       if(state.ai!==controller)return;state.aiPhase=status.phase;state.aiRoute=status.route||null;renderAI();
     }});
     if(state.ai!==controller||controller.signal.aborted)return;
+    state.aiResult={...answer,readingId:state.reading.id,language:state.lang};
     $('ai-answer').textContent=answer.text;$('ai-partial').hidden=!answer.truncated;state.aiPhase='complete';state.aiRoute=answer.route;
   } catch(error) {
     if(state.ai!==controller)return;
@@ -214,13 +266,16 @@ async function startAI() {
     if(state.ai===controller) {state.ai=null;$('ai-start').disabled=false;$('ai-cancel').hidden=true;$('ai-retry').hidden=false;renderAI();}
   }
 }
-function updateCount() { $('question-count').textContent=`${$('question').value.length} / 200`; }
+function updateCount() { $('question-count').textContent=`${$('question').value.length} / ${QUESTION_LIMIT}`; }
 $('reading-form').addEventListener('submit',begin);
 $('spread-options').addEventListener('change',event=>{if(Object.hasOwn(SPREADS,event.target.value))state.spread=event.target.value;});
 $('auto-draw').addEventListener('click',()=>{while(state.pending)pickCard(0);});
 $('reset').addEventListener('click',()=>{clearAI();state.pending=null;state.reading=null;state.draws=[];state.deck=[];state.saved=false;$('form-error').hidden=true;renderTable();renderReading();$('question').focus();});
 $('question').addEventListener('input',updateCount);$('card-search').addEventListener('input',renderLibrary);
 $('save').addEventListener('click',saveReading);$('export').addEventListener('click',exportReading);
+document.querySelectorAll('[data-export-image]').forEach(button=>button.addEventListener('click',exportImage));
+$('image-dialog').addEventListener('close',()=>{imageRun++;releaseImage();imageBusy(false);});
+$('image-zoom').addEventListener('click',()=>{const zoomed=$('image-preview-scroll').classList.toggle('zoomed');$('image-zoom').textContent=t(zoomed?'imageFit':'imageZoom');});
 $('ai-start').addEventListener('click',startAI);$('ai-retry').addEventListener('click',startAI);$('ai-cancel').addEventListener('click',()=>state.ai?.abort());
 $('history-open').addEventListener('click',()=>{renderHistory();$('history-dialog').showModal();});
 for(const lang of ['zh','en'])$(`lang-${lang}`).addEventListener('click',()=>setLanguage(lang));
@@ -231,6 +286,9 @@ document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('cli
 const artCredits=el('p');artCredits.dataset.i18n='artCredits';
 const artSource=el('a');artSource.dataset.i18n='artSource';artSource.href='https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)';artSource.target='_blank';artSource.rel='noopener noreferrer';
 document.querySelector('.method-note').append(artCredits,artSource);
+const attributeMethod=el('p');attributeMethod.dataset.i18n='attributeMethod';document.querySelector('.method-note').append(attributeMethod);
+for(const source of KNOWLEDGE_SOURCES){const link=el('a','knowledge-source',source.title+' ↗');link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';document.querySelector('.method-note').append(link);}
+$('question').maxLength=QUESTION_LIMIT;updateCount();
 $('table-back').innerHTML=cardBack();applyLanguage();
 // A late IP response can never overwrite a manual choice. Never retain the IP.
 lookupCountry().then(country=>{

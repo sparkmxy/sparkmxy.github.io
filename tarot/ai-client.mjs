@@ -1,11 +1,11 @@
-import {validateReading} from './core.mjs';
+import {prepareAIReading} from './reading-request.mjs';
 import {selectAIRoute} from '../iching/ai-routing.mjs';
 import {getAIEndpoint} from '../iching/ai-client.mjs';
 import {AI_ROUTES} from '../iching/ai-config.mjs';
 export class AIError extends Error { constructor(code) { super(String(code)); this.code=String(code); } }
 export async function requestTarot(raw,{endpoint,signal,timeoutMs=65000,fetchImpl=fetch}={}) {
   let input,url;
-  try { input=validateReading(raw); } catch { throw new AIError(400); }
+  try { input=prepareAIReading(raw); } catch(error) { throw new AIError(error.message==='QUESTION_LENGTH'?'QUESTION_LENGTH':400); }
   try { url=getAIEndpoint(endpoint); } catch { throw new AIError('CONFIG'); }
   const timeout=AbortSignal.timeout(timeoutMs);
   try {
@@ -23,6 +23,7 @@ export async function requestTarot(raw,{endpoint,signal,timeoutMs=65000,fetchImp
   }
 }
 export async function interpretTarot(reading,{signal,onStatus,countryCode,routes=AI_ROUTES,fetchImpl=fetch,healthTimeoutMs=10000}={}) {
+  try { prepareAIReading(reading); } catch(error) { throw new AIError(error.message==='QUESTION_LENGTH'?'QUESTION_LENGTH':400); }
   onStatus?.({phase:'selecting'});
   let route;
   try { route=await selectAIRoute(routes,{signal,fetchImpl,timeoutMs:healthTimeoutMs,capability:'tarot',countryCode}); }

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {requestTarot,interpretTarot} from '../ai-client.mjs';
 import {AI_ROUTES} from '../../iching/ai-config.mjs';
+import {prepareAIReading} from '../reading-request.mjs';
 import worker from '../../workers/iching-ai/worker.mjs';
 import {createHandler} from '../../appwrite/iching-probe/src/main.js';
 const input={kind:'tarot',language:'en',question:'How can I learn?',spread:'single',cards:[{id:1,reversed:false}]};
@@ -27,8 +28,21 @@ test('Cloudflare and Appwrite share canonical tarot prompts and retain server-on
 test('tarot skips an older Appwrite deployment and sends exactly one canonical POST',async()=>{
   let posts=0;const answer=await interpretTarot(input,{routes:AI_ROUTES,fetchImpl:async(url,options)=>{
     if(options.method==='GET')return Response.json(url.includes('appwrite')?{service:'iching-ai',ready:true,region:'sgp',version:'iching-appwrite-ai-v1'}:{service:'iching-ai',ready:true,capabilities:['iching','tarot']});
-    posts++;assert.ok(url.includes('workers.dev'));assert.deepEqual(JSON.parse(options.body),input);return Response.json(result);
+    posts++;assert.ok(url.includes('workers.dev'));assert.deepEqual(JSON.parse(options.body),prepareAIReading(input));return Response.json(result);
   }});assert.equal(posts,1);assert.equal(answer.route,'cloudflare');
+});
+test('attribute focus reaches the existing canonical server without a new schema or edited question',async t=>{
+  let generated=0;
+  const originalQuestion=input.question;
+  t.mock.method(globalThis,'fetch',async(_url,options)=>{
+    generated++;
+    const data=JSON.parse(JSON.parse(options.body).contents[0].parts[0].text);
+    assert.ok(data.question.startsWith(originalQuestion));assert.match(data.question,/elements.*numbers\/courts.*Golden Dawn astrology/);
+    assert.equal(data.cards[0].card,'The Magician');return provider();
+  });
+  const env={GEMINI_API_KEY:'test-only-secret',GEMINI_MODEL:'gemini-test',ALLOWED_ORIGINS:origin,AI_RATE_LIMITER:{limit:async()=>({success:true})},AI_GLOBAL_LIMITER:{limit:async()=>({success:true})}};
+  const answer=await requestTarot(input,{endpoint:AI_ROUTES.cloudflare.endpoint,fetchImpl:(url,options)=>worker.fetch(new Request(url,{...options,headers:{...options.headers,Origin:origin}}),env)});
+  assert.equal(answer.text,result.text);assert.equal(generated,1);assert.equal(input.question,originalQuestion);
 });
 test('known mainland IP selects upgraded Appwrite; quota failure never triggers another generation',async()=>{
   let posts=0;
