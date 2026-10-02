@@ -25,7 +25,9 @@ test('bundled Worker runs in workerd, sends the canonical prompt and refuses red
       calls++;
       assert.equal(new URL(request.url).hostname, 'generativelanguage.googleapis.com');
       assert.equal(request.headers.get('x-goog-api-key'), 'runtime-test-placeholder');
-      assert.match((await request.json()).contents[0].parts[0].text, /水泽节/);
+      const body=await request.json();
+      assert.match(body.contents[0].parts[0].text, calls===3 ? /The Magician/ : /水泽节/);
+      if(calls===3)assert.match(body.systemInstruction.parts[0].text,/natural English/);
       if (providerStatus === 302) return new Response(null, { status: 302, headers: { Location: 'https://example.com/must-not-follow' } });
       return Response.json({ candidates: [{ finishReason: 'STOP', content: { parts: [{ text: '测试解读，仅用于运行时验证。' }] } }] });
     },
@@ -46,5 +48,11 @@ test('bundled Worker runs in workerd, sends the canonical prompt and refuses red
     assert.equal(redirect.status, 502);
     assert.equal((await redirect.json()).providerStatus, 302);
     assert.equal(calls, 2);
+    providerStatus=200;
+    const tarot=await mf.dispatchFetch('http://localhost/api/interpret',{
+      method:'POST',headers:{Origin:'https://sparkmxy.github.io','Content-Type':'application/json'},
+      body:JSON.stringify({kind:'tarot',language:'en',question:'A new beginning?',spread:'single',cards:[{id:1,reversed:false}]}),
+    });
+    const tarotData=await tarot.json();assert.equal(tarot.status,200,JSON.stringify(tarotData));assert.equal(tarotData.promptVersion,'tarot-v1');assert.equal(calls,3);
   } finally { await mf.dispose(); }
 });

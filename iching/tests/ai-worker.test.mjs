@@ -73,7 +73,7 @@ test('missing key/bindings fail closed and health reveals no secret or prompt', 
     assert.equal((await worker.fetch(request(), env({ [missing]: undefined }))).status, 503);
   }
   const health = await worker.fetch(new Request('https://iching-ai.example/health'), env());
-  assert.deepEqual(await health.json(), { service: 'iching-ai', ready: true });
+  assert.deepEqual(await health.json(), { service: 'iching-ai', ready: true, capabilities: ['iching', 'tarot'], countryCode: null });
   assert.equal((await worker.fetch(new Request('https://iching-ai.example/health'), env({ GEMINI_API_KEY: '' }))).status, 503);
 });
 

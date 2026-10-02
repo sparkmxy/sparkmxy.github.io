@@ -1,4 +1,4 @@
-import { buildInterpretationPrompt, validateAIInput } from '../../iching/ai-prompt.mjs';
+import { buildInterpretationPrompt, validateAIInput, CAPABILITIES } from '../../divination/prompt.mjs';
 
 const MAX_BODY_BYTES = 4096;
 const UPSTREAM_TIMEOUT_MS = 55_000;
@@ -106,7 +106,9 @@ export default {
     const allowed = allowedOrigins(env).includes(origin);
     if (url.pathname === '/health' && request.method === 'GET') {
       const configured = ready(env);
-      return json({ service: 'iching-ai', ready: configured }, configured ? 200 : 503, allowed ? origin : null);
+      const country = request.cf?.country;
+      const countryCode = typeof country === 'string' && /^[A-Z]{2}$/.test(country) && country !== 'XX' ? country : null;
+      return json({ service: 'iching-ai', ready: configured, capabilities: CAPABILITIES, countryCode }, configured ? 200 : 503, allowed ? origin : null);
     }
     if (url.pathname !== '/api/interpret') return json({ error: 'not_found' }, 404, allowed ? origin : null);
     if (!allowed) return json({ error: 'origin_not_allowed' }, 403, null);

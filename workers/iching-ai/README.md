@@ -1,5 +1,7 @@
 # 静观 · Cloudflare Worker AI 解卦
 
+2026-10-02 新增与 `tarot/` 共用的塔罗解读。`divination/prompt.mjs` 在服务端分流；旧周易 `{question, values}` 输入保持兼容，塔罗使用严格校验的 `{kind:"tarot", language, question, spread, cards}`。健康接口新增 `capabilities:["iching","tarot"]` 和 Cloudflare 提供的 `countryCode`。接口地址、密钥、CORS 和限流额度不变。[塔罗说明](../../tarot/README.md)。
+
 网站继续托管在 GitHub Pages；本目录的 Worker 负责保存 Gemini 密钥、组装提示词和请求 Gemini。静态网页从不接触 Gemini 密钥。
 
 当前 Worker 已部署到 `https://iching-ai.iching-ai-worker.workers.dev`，本地网页的接口地址已对应配置。2026-09-30 已确认 `GEMINI_API_KEY` Secret 存在，健康接口返回 200，真实 Gemini 测试约 4.6 秒返回完整中文解读。部署通过本机 HTTP 代理 `127.0.0.1:7890` 完成。密钥仅保存在 Cloudflare。

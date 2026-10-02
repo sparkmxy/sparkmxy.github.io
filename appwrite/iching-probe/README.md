@@ -1,5 +1,11 @@
 # Appwrite 新加坡线路验证
 
+## 2026-10-02：塔罗共用接口升级
+
+新版 **1.2.0** 同时支持周易与塔罗；周易输入、接口地址、环境变量和限流保持兼容。Cloudflare 已升级，线上 Appwrite 目前仍是 1.1.0，需要在原函数 **Deployments → Create deployment → Manual** 上传 `dist/iching-appwrite-probe.tar.gz` 并激活。入口 `src/main.js`、构建 `npm install --omit=dev`、现有 Secret、`PUBLIC_AI_ENABLED=true`、Node.js 22、30 秒超时和 Firewall 全部沿用，**不要按下方早期试点步骤关闭当前公开接口**。
+
+重新生成上传包：`node scripts/package.mjs`。新版 `/ai/health` 在原字段之外返回 `capabilities: ["iching", "tarot"]`。塔罗网页只会选择声明支持塔罗的服务，未升级的 Appwrite 继续提供周易服务。[塔罗实现说明](../../tarot/README.md)。下方 1.1.0 的部署记录保留作为历史验证。
+
 最初版本用于验证大陆访问 Appwrite 与调用 Gemini。1.1.0 新增完整解卦和可选公开接口；**公开接口默认关闭**，必须通过完整解卦测试并配置入口限流后才启用。
 
 项目 ID：`6abcac2100184edfa274`。已部署地址：`https://iching-probe.sgp.appwrite.run`。2026-09-30 用户提供的第二份检查记录（UTC 10:53）确认：地区 `sgp`、Gemini `gemini-3.5-flash-lite` 完整解卦耗时 3550ms、788 字、未截断；网络条件由用户记录为中国大陆且关闭 VPN/代理。`interpretationReady:false` 表示尚未开启公开接口，符合测试阶段预期。`countryCode:null` 表明此部署没有提供地区提示，不能据此宣称按大陆 IP 精确识别。入口检查相隔时间约 6 秒，前端选线等待已放宽至 10 秒。

@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { buildInterpretationPrompt, validateAIInput } from '../../../iching/ai-prompt.mjs';
+import { buildInterpretationPrompt, validateAIInput } from '../../../divination/prompt.mjs';
 
 export const AI_VERSION = 'iching-appwrite-ai-v1';
 export const MODEL = 'gemini-3.5-flash-lite';

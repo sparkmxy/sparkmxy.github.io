@@ -62,7 +62,7 @@ export function createHandler({ env = process.env, fetchImpl = fetch, now = Date
     const countryCode = /^[A-Z]{2}$/.test(rawCountry) && rawCountry !== 'XX' ? rawCountry : null;
 
     if (path === '/ai/health' && method === 'GET') {
-      return reply({ service: 'iching-ai', version: AI_VERSION, region, ready: aiReady, countryCode }, aiReady ? 200 : 503);
+      return reply({ service: 'iching-ai', version: AI_VERSION, region, ready: aiReady, countryCode, capabilities: ['iching', 'tarot'] }, aiReady ? 200 : 503);
     }
 
     if (['/', '/health'].includes(path) && method === 'GET') {

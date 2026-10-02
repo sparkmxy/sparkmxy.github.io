@@ -3,8 +3,9 @@ import { readFile, realpath, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// A local preview only: expose this directory, never the rest of the repository.
-const root = await realpath(fileURLToPath(new URL('.', import.meta.url)));
+// A local preview only: expose the three public module directories, never secrets.
+const roots = Object.fromEntries(await Promise.all(['iching','tarot','divination'].map(async name=>
+  [name, await realpath(fileURLToPath(new URL(`../${name}/`, import.meta.url)))])));
 const port = Number(process.env.PORT || 4173);
 if (!Number.isInteger(port) || port < 1 || port > 65535) {
   throw new RangeError('PORT 必须为 1 至 65535 之间的整数。');
@@ -27,7 +28,7 @@ const types = {
   '.md': 'text/plain; charset=utf-8',
 };
 
-function insideRoot(target) {
+function insideRoot(root, target) {
   const relative = path.relative(root, target);
   return relative === '' || (!path.isAbsolute(relative) && relative !== '..' && !relative.startsWith(`..${path.sep}`));
 }
@@ -55,30 +56,32 @@ const server = createServer(async (request, response) => {
     reply(400, 'Invalid URL');
     return;
   }
-  if (pathname === '/' || pathname === '/iching') {
-    response.writeHead(302, { Location: '/iching/' });
+  if (pathname === '/' || ['/iching','/tarot'].includes(pathname)) {
+    response.writeHead(302, { Location: pathname === '/tarot' ? '/tarot/' : '/iching/' });
     response.end();
     return;
   }
-  if (!pathname.startsWith('/iching/') || /[\\\u0000]/.test(pathname)) {
+  const directory = pathname.split('/')[1];
+  const root = Object.hasOwn(roots, directory) ? roots[directory] : null;
+  if (!root || /[\\\u0000]/.test(pathname)) {
     reply(404, 'Not found');
     return;
   }
 
-  const parts = pathname.slice('/iching/'.length).split('/');
+  const parts = pathname.slice(directory.length + 2).split('/');
   if (parts.some(part => part.startsWith('.') || part.includes(':'))) {
     reply(404, 'Not found');
     return;
   }
   let target = path.resolve(root, ...parts);
-  if (!insideRoot(target)) {
+  if (!insideRoot(root, target)) {
     reply(404, 'Not found');
     return;
   }
 
   try {
     target = await realpath(target);
-    if (!insideRoot(target)) {
+    if (!insideRoot(root, target)) {
       reply(404, 'Not found');
       return;
     }
@@ -89,7 +92,7 @@ const server = createServer(async (request, response) => {
         return;
       }
       target = await realpath(path.join(target, 'index.html'));
-      if (!insideRoot(target)) {
+      if (!insideRoot(root, target)) {
         reply(404, 'Not found');
         return;
       }
@@ -115,5 +118,6 @@ server.on('error', error => {
 });
 server.listen(port, '127.0.0.1', () => {
   console.log(`周易 · 蓍草占筮： http://127.0.0.1:${port}/iching/`);
+  console.log(`星镜 · 塔罗占卜： http://127.0.0.1:${port}/tarot/`);
   console.log('按 Ctrl+C 停止。');
 });
