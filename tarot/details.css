@@ -1,3 +1,35 @@
 .drawn-card{display:block;width:100%;padding:0;border:0;background:none}.slot-number{font-size:9px;color:var(--gold);display:block;margin-bottom:7px}.slot-label{display:block;font-size:10px;line-height:1.5;color:var(--muted);margin-top:7px}.card-title-row{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.card-title-row .orientation{font-size:10px;color:var(--gold)}.card-position{font-size:10px;color:var(--gold);margin:0}.card-keywords{font-size:11px;color:var(--muted);margin:6px 0}.card-note{font-size:13px;line-height:1.9;margin:13px 0 6px}.card-meanings strong{display:block;margin-top:12px;font-weight:500;color:var(--ink)}#card-dialog-content{padding-top:16px}.dialog-art{margin:0 auto 20px}.dialog-content .eyebrow{text-align:center;margin:12px 0}.dialog-content .card-keywords{text-align:center;margin-bottom:22px}.history-item small{font-size:10px;color:var(--muted)}.hero-art{overflow:clip}.history-empty{padding:30px 0;color:var(--muted)}
 @media(max-width:740px){.deck-pick{flex-basis:40px;margin-left:-22px}.card-note{font-size:12px}}
 @media(max-width:360px){.deck-pick{flex-basis:35px;margin-left:-19px}}
+
+/* Original print proportions, full artwork and a quiet paper frame. */
+.rws-card{display:block;width:100%;height:auto}
+.card-frame{width:100%;aspect-ratio:200/346;background:#eee4cd;border-radius:5px;overflow:hidden;box-shadow:0 1px 3px #51442d18}
+.card-frame>.rws-card{height:100%;object-fit:contain}
+.spread-slot .card-frame{aspect-ratio:200/346;border:0;display:block}
+.reversed>.rws-card{transform:rotate(180deg)}
+.spread-slot .name{display:block;font:13px/1.5 var(--serif);margin:4px 0}
+.hero-card{width:145px;filter:drop-shadow(0 14px 14px #293c401a)}
+.hero-card.center{width:155px;top:23px}
+.hero-card.left,.hero-card.right{top:65px}
+.hero-card>.rws-card{border-radius:6px;outline:1px solid #c7b28c88;outline-offset:-1px}
+.deck-pick{background:transparent}
+.deck-pick>.rws-card{border-radius:4px}
+.resting-card>.rws-card{border-radius:5px}
+.reading-card{grid-template-columns:112px minmax(0,1fr)}
+#card-dialog{width:min(800px,calc(100% - 32px));padding:26px 32px 32px}
+#card-dialog-content{display:grid;grid-template-columns:270px minmax(0,1fr);gap:34px;align-items:start;padding-top:16px}
+.dialog-art{width:270px;margin:0;box-shadow:0 10px 24px #51442d18;border-radius:5px;overflow:hidden}
+.dialog-content h2{text-align:left;margin:4px 0 13px;font-size:29px}
+.dialog-content .eyebrow,.dialog-content .card-keywords{text-align:left}
+.card-image-link{display:inline-block;margin-top:16px;font-size:11px;border-bottom:1px solid var(--gold);padding-bottom:5px}
+@media(max-width:740px){
+  .reading-card{grid-template-columns:78px minmax(0,1fr)}
+  #card-dialog{padding:20px 24px 26px}
+  #card-dialog-content{grid-template-columns:1fr;gap:22px}
+  .dialog-art{width:min(220px,100%);margin:auto}
+  .dialog-content h2,.dialog-content .eyebrow,.dialog-content .card-keywords{text-align:center}
+  .hero-card.left,.hero-card.right{top:35px}
+  .hero-card.center{top:0;width:140px}
+  .hero-card.left,.hero-card.right{width:128px}
+}

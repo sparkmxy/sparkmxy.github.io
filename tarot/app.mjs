@@ -1,6 +1,6 @@
 import {CARDS,SPREADS} from './cards.mjs';
 import {shuffleDeck,validateReading} from './core.mjs';
-import {cardArt,cardBack} from './art.mjs';
+import {cardArt,cardBack,cardImageURL} from './art.mjs';
 import {TEXT,translate} from './i18n.mjs';
 import {browserLanguage,storedLanguage,lookupCountry,languageForCountry} from './locale.mjs';
 import {interpretTarot} from './ai-client.mjs';
@@ -17,7 +17,10 @@ const state={lang:manual||browserLanguage(),manual:!!manual,source:manual?'manua
   ai:null,aiPhase:null,aiRoute:null,aiError:null,saved:false};
 const t=(key,values)=>translate(state.lang,key,values);
 function el(tag,className,text) { const node=document.createElement(tag); if(className)node.className=className; if(text!==undefined)node.textContent=text; return node; }
-function artFrame(id,reversed=false,className='card-frame') { const node=el('div',`${className}${reversed?' reversed':''}`); node.innerHTML=cardArt(id,state.lang); return node; }
+function artFrame(id,reversed=false,className='card-frame') {
+  const node=el('div',`${className}${reversed?' reversed':''}`);
+  node.innerHTML=cardArt(id,state.lang,className==='dialog-art'?{loading:'eager',sizes:'(max-width: 740px) 220px, 270px'}:undefined);return node;
+}
 function formatDate(value) { return new Intl.DateTimeFormat(state.lang==='zh'?'zh-CN':'en',{dateStyle:'medium',timeStyle:'short'}).format(new Date(value)); }
 let toastTimer;
 function toast(key) { $('toast').textContent=t(key); $('toast').hidden=false; clearTimeout(toastTimer); toastTimer=setTimeout(()=>$('toast').hidden=true,2800); }
@@ -29,7 +32,9 @@ function applyLanguage() {
   document.querySelectorAll('[data-i18n-aria]').forEach(node=>node.setAttribute('aria-label',t(node.dataset.i18nAria)));
   for(const lang of ['zh','en']) $(`lang-${lang}`).setAttribute('aria-pressed',String(lang===state.lang));
   $('language-source').textContent=t(`source${state.source==='ip'?'IP':state.source==='manual'?'Manual':'Browser'}`,{country:state.country});
-  $('hero-card-left').innerHTML=cardArt(17,state.lang); $('hero-card-right').innerHTML=cardArt(21,state.lang); $('hero-card-center').innerHTML=cardArt(2,state.lang);
+  $('hero-card-left').innerHTML=cardArt(17,state.lang,{loading:'eager',sizes:'145px'});
+  $('hero-card-right').innerHTML=cardArt(21,state.lang,{loading:'eager',sizes:'145px'});
+  $('hero-card-center').innerHTML=cardArt(2,state.lang,{loading:'eager',sizes:'155px',priority:'high'});
   renderOptions(); renderTable(); renderReading(); renderLibrary(); renderAI();
   if($('card-dialog').open && state.dialogCard!==null) renderCardDialog(state.dialogCard);
   if($('history-dialog').open) renderHistory();
@@ -67,6 +72,7 @@ function renderTable() {
       const button=el('button','drawn-card');button.type='button';button.setAttribute('aria-label',`${CARDS[draw.id].name[state.lang]} · ${t(draw.reversed?'reversed':'upright')}`);
       button.append(artFrame(draw.id,draw.reversed));button.addEventListener('click',()=>openCard(draw.id));slot.append(button);
       slot.append(el('small','orientation',t(draw.reversed?'reversed':'upright')));
+      slot.append(el('span','name',CARDS[draw.id].name[state.lang]));
     } else { const frame=el('div','card-frame slot-empty');frame.innerHTML=cardBack();slot.append(frame); }
     slot.append(el('span','slot-label',spread.positions[state.lang][i]));$('spread-slots').append(slot);
   }
@@ -136,6 +142,7 @@ function renderCardDialog(id) {
   const art=artFrame(id,false,'dialog-art'),copy=el('div','dialog-content');
   const title=el('h2','',card.name[state.lang]);title.id='card-dialog-title';copy.append(el('p','eyebrow',t(card.suit)),title,el('p','card-keywords',card.keywords[state.lang]));
   for(const key of ['upright','reversed'])copy.append(el('h3','',t(key)),el('p','',card[key][state.lang]));
+  const view=el('a','card-image-link',t('viewImage'));view.href=cardImageURL(id);view.target='_blank';view.rel='noopener noreferrer';copy.append(view);
   content.append(art,copy);
 }
 function openCard(id) { state.dialogCard=id;renderCardDialog(id);if(!$('card-dialog').open)$('card-dialog').showModal(); }
@@ -221,6 +228,9 @@ document.querySelectorAll('[data-close]').forEach(button=>button.addEventListene
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('click',event=>{
   if(event.target!==dialog)return;const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();
 }));
+const artCredits=el('p');artCredits.dataset.i18n='artCredits';
+const artSource=el('a');artSource.dataset.i18n='artSource';artSource.href='https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)';artSource.target='_blank';artSource.rel='noopener noreferrer';
+document.querySelector('.method-note').append(artCredits,artSource);
 $('table-back').innerHTML=cardBack();applyLanguage();
 // A late IP response can never overwrite a manual choice. Never retain the IP.
 lookupCountry().then(country=>{

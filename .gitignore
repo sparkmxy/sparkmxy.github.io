@@ -14,3 +14,4 @@ node_modules/
 .pnpm-store/
 /workers/iching-ai/dist/
 /appwrite/iching-probe/dist/
+/tmp/tarot-art/

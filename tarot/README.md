@@ -4,7 +4,7 @@
 
 ## 功能
 
-- 完整 78 张牌，韦特—史密斯顺序（力量 VIII、正义 XI）。矢量牌面和简要双语牌意均为原创，并非原版牌面复刻。
+- 完整 78 张牌，采用 1909 年伟特—史密斯首版「Roses & Lilies」扫描图与同版玫瑰百合牌背，保留完整原画、印字和纸张质感（力量 VIII、正义 XI）。简要双语牌意为本站编写。
 - 单牌、三牌、五牌，可手动选择或自动补齐，可启用正逆位。
 - Web Crypto 安全随机数、拒绝采样和 Fisher–Yates 洗牌，不重复抽取；正逆位独立各 50%。安全随机源失败时停止，不降级为 `Math.random`。
 - AI 结合实际牌位、正逆位、问题解读，输出语言随页面语言。仅在点击按钮时调用 Gemini。
@@ -21,6 +21,14 @@ node --test tarot/tests/*.test.mjs iching/tests/*.test.mjs appwrite/iching-probe
 ```
 
 访问 `http://127.0.0.1:4173/tarot/`。预览仅开放 `iching`、`tarot`、`divination` 三个目录。
+
+## 牌面来源
+
+原画作者为 Pamela Colman Smith，原版扫描由 Saskia Jansen 提供。图片来自 Wikimedia Commons 的 [1909 年 Roses & Lilies 牌组](https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies))，所采用的 79 个文件均在来源页标记为 Public domain。牌背作者未确定，可能为 Pamela Colman Smith；逐张来源、原文件校验值、扫描尺寸与处理后的文件校验值记录在 [sources.json](assets/rws-1909/sources.json)。
+
+图片保存在本站 `assets/rws-1909/`，运行时不依赖 Commons。仅等比例缩小并编码为 WebP，不裁切、重绘或改色。320 像素缩略图用于牌阵和牌库，720 像素版本用于放大查看；浏览器按显示尺寸与像素密度选择图片，牌库采用延迟加载。原图英文印字保留，牌外名称随中英切换，牌意窗口可打开完整牌面。
+
+重新导入时，在仓库根目录运行 `node scripts/tarot/import-rws.mjs`。此开发脚本需要可访问 Commons 的网络，以及可导入的 `sharp`；若使用独立工具环境，可用 `TAROT_SHARP_MODULE` 指定 Sharp 的模块 URL。它校验每张图的年份、公有领域标记、大小与原文件 SHA-1，缓存原文件到被 Git 忽略的 `tmp/tarot-art/originals/`，然后生成本地图片与来源清单。网站本身无需安装 Sharp 或重新部署 Gemini 云服务。
 
 ## 共用接口
 

@@ -1,0 +1,2220 @@
+{
+  "deck": "Rider–Waite–Smith · 1909 Roses & Lilies",
+  "sourceCollection": "https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)",
+  "importedAt": "2026-10-02T14:14:21.873Z",
+  "processing": "Full uncropped scans, resized and encoded as WebP. No recolouring, retouching or generated content.",
+  "cards": [
+    {
+      "id": 0,
+      "name": "The Fool",
+      "commonsTitle": "File:RWS1909 - 00 Fool.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_00_Fool.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/6/6e/RWS1909_-_00_Fool.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 825,
+      "originalHeight": 1429,
+      "originalSHA1": "287b2042278e1eff5066a6cef115a1a409384add",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/00.webp",
+        "width": 720,
+        "height": 1247,
+        "bytes": 258954,
+        "sha256": "c86b3f01aa3c71d57938cd8e7ab7061c4fbb410e0cb42d39b6881e5f75667306"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/00-thumb.webp",
+        "width": 320,
+        "height": 554,
+        "bytes": 52774,
+        "sha256": "66088d3e0c2fc76cf2eb7275348cc6a5e7b23ffecd0992cc5c560b141daf8bec"
+      }
+    },
+    {
+      "id": 1,
+      "name": "The Magician",
+      "commonsTitle": "File:RWS1909 - 01 Magician.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_01_Magician.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/b0/RWS1909_-_01_Magician.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 849,
+      "originalHeight": 1429,
+      "originalSHA1": "631db8c7e7f5a258637f9f3933fbefe861672385",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/01.webp",
+        "width": 720,
+        "height": 1212,
+        "bytes": 211956,
+        "sha256": "bd707b15d408872363fc5f18a5149d9bb28e7da5360be159706752ddc861930f"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/01-thumb.webp",
+        "width": 320,
+        "height": 539,
+        "bytes": 49282,
+        "sha256": "2b6c754e2ed2f7484e4be54fbf3191bab2e07bf58a8303c9eb0df11cb924d66a"
+      }
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess",
+      "commonsTitle": "File:RWS1909 - 02 High Priestess.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_02_High_Priestess.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/RWS1909_-_02_High_Priestess.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 819,
+      "originalHeight": 1451,
+      "originalSHA1": "672876c94d85b74c15c5421af9ef70ea7f1d7a70",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/02.webp",
+        "width": 720,
+        "height": 1276,
+        "bytes": 270260,
+        "sha256": "b7c93335ba7951a378ea9bac63d5d7635c70800ec5ddf56901cbd0f06d45b1fb"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/02-thumb.webp",
+        "width": 320,
+        "height": 567,
+        "bytes": 60568,
+        "sha256": "39407634f4ef6e0d9423b703451f59826b4da3edec3ec2c69a914c11a1fa3fa1"
+      }
+    },
+    {
+      "id": 3,
+      "name": "The Empress",
+      "commonsTitle": "File:RWS1909 - 03 Empress.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_03_Empress.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/70/RWS1909_-_03_Empress.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 860,
+      "originalHeight": 1455,
+      "originalSHA1": "765a2bf614970581a46cd7094a8d74cce20c6d42",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/03.webp",
+        "width": 720,
+        "height": 1218,
+        "bytes": 255890,
+        "sha256": "1234655a5b878287dbb8044f31ac164aa68818eaa41f64f2e4fc78fe72c4a6c7"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/03-thumb.webp",
+        "width": 320,
+        "height": 541,
+        "bytes": 63422,
+        "sha256": "81e4a1f6e1d2c26dec8d272460a77465757d73ab381485862c125ccd7ed2359c"
+      }
+    },
+    {
+      "id": 4,
+      "name": "The Emperor",
+      "commonsTitle": "File:RWS1909 - 04 Emperor.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_04_Emperor.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/b4/RWS1909_-_04_Emperor.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1417,
+      "originalSHA1": "e8325d99312ed62ddac51dbd4948491637a6c142",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/04.webp",
+        "width": 720,
+        "height": 1250,
+        "bytes": 295630,
+        "sha256": "de05030e2ae2bb3f1239aaa11fc8522608cc810a8a1f4d23e51539df71bd2025"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/04-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 59792,
+        "sha256": "24a003bc79a7dcc67c4bf1c5a821bb5d2364e688543b1de6bbb00482fecd4d51"
+      }
+    },
+    {
+      "id": 5,
+      "name": "The Hierophant",
+      "commonsTitle": "File:RWS1909 - 05 Hierophant.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_05_Hierophant.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/70/RWS1909_-_05_Hierophant.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 832,
+      "originalHeight": 1416,
+      "originalSHA1": "c35324e6a9b6cdf12929b4ff7ca7f7fe6040ff83",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/05.webp",
+        "width": 720,
+        "height": 1225,
+        "bytes": 277046,
+        "sha256": "8f82e0a810db49074aa506d96282ff34298af39db20e2c7c61cab847f30a393e"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/05-thumb.webp",
+        "width": 320,
+        "height": 545,
+        "bytes": 62676,
+        "sha256": "5c85a8172125ad11645a5b0c92ffeacc053191084851de658de7f34dca8353ad"
+      }
+    },
+    {
+      "id": 6,
+      "name": "The Lovers",
+      "commonsTitle": "File:RWS1909 - 06 Lovers.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_06_Lovers.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/87/RWS1909_-_06_Lovers.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 814,
+      "originalHeight": 1430,
+      "originalSHA1": "1d65ad5c64962e5633949d306367962a93f7bf82",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/06.webp",
+        "width": 720,
+        "height": 1265,
+        "bytes": 324280,
+        "sha256": "8cb8ba5a7537ca767cd137c2c2869f20e9a2222b8cfb0518f07000baf80f1636"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/06-thumb.webp",
+        "width": 320,
+        "height": 562,
+        "bytes": 65988,
+        "sha256": "5e67d55280169353124ce4155a8a6a9b92ec538e3c7f90a1efb4053e3ee1f33d"
+      }
+    },
+    {
+      "id": 7,
+      "name": "The Chariot",
+      "commonsTitle": "File:RWS1909 - 07 Chariot.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_07_Chariot.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/aa/RWS1909_-_07_Chariot.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 838,
+      "originalHeight": 1441,
+      "originalSHA1": "0323c1e2bcdef5b769cce22b0aee5ffc4d13460e",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/07.webp",
+        "width": 720,
+        "height": 1238,
+        "bytes": 262316,
+        "sha256": "4ad04b87e17cd6ad94ccdfa488698b86cac1fb1022b7921d5a3130e3fa74d845"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/07-thumb.webp",
+        "width": 320,
+        "height": 550,
+        "bytes": 58816,
+        "sha256": "ecfc197ca3a7936fdd3399af6ac9c90d1af09f16839d10d00c93146cc9fd9080"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Strength",
+      "commonsTitle": "File:RWS1909 - 08 Strength.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_08_Strength.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/29/RWS1909_-_08_Strength.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1413,
+      "originalSHA1": "129287de0ff801086720ef2ade2c1b943be1e390",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/08.webp",
+        "width": 720,
+        "height": 1245,
+        "bytes": 215022,
+        "sha256": "14d28822275bcb93211701367e374a0d27e38099c4f81bbf927f2f95db0d91c0"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/08-thumb.webp",
+        "width": 320,
+        "height": 553,
+        "bytes": 48814,
+        "sha256": "833484357902052db094466fe65406c345acd9e90e42d8112288e4f9c40df482"
+      }
+    },
+    {
+      "id": 9,
+      "name": "The Hermit",
+      "commonsTitle": "File:RWS1909 - 09 Hermit.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_09_Hermit.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/28/RWS1909_-_09_Hermit.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 842,
+      "originalHeight": 1424,
+      "originalSHA1": "d5ec9f2644aeef10602dd76159275b4a52fa8bc6",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/09.webp",
+        "width": 720,
+        "height": 1218,
+        "bytes": 216350,
+        "sha256": "22654269efc1afbba1c13c6b05cbf1a055fb6e98ab16cb19fe65abe7db7f7df2"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/09-thumb.webp",
+        "width": 320,
+        "height": 541,
+        "bytes": 49698,
+        "sha256": "491ae87af24f91ee327a00dbe68eaebf8a19b4c3bf6bbb8f331bb1b0ddfa936f"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Wheel of Fortune",
+      "commonsTitle": "File:RWS1909 - 10 Wheel of Fortune.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_10_Wheel_of_Fortune.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/RWS1909_-_10_Wheel_of_Fortune.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 814,
+      "originalHeight": 1437,
+      "originalSHA1": "aed5a856b71a0403d896d722691c83ef17642afb",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/10.webp",
+        "width": 720,
+        "height": 1271,
+        "bytes": 318042,
+        "sha256": "d643f7748407f7c36d3a0e5e6fe063ca765e864266b1010d2eca33aae105131d"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/10-thumb.webp",
+        "width": 320,
+        "height": 565,
+        "bytes": 62974,
+        "sha256": "a13875109a2d1870fe73f8f706117942aec3fd045b308fcf0f1271b74d6e4ebf"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Justice",
+      "commonsTitle": "File:RWS1909 - 11 Justice.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_11_Justice.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/4/4f/RWS1909_-_11_Justice.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 828,
+      "originalHeight": 1441,
+      "originalSHA1": "64765d67ac8451b326a7a4ff8e3828f1bd4311ec",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/11.webp",
+        "width": 720,
+        "height": 1253,
+        "bytes": 263108,
+        "sha256": "058f2a8ef75ec3b7d75a47e7b4352df2f863c993f42446565ba2673acf2163ff"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/11-thumb.webp",
+        "width": 320,
+        "height": 557,
+        "bytes": 61016,
+        "sha256": "00b5713bef63bae08f7d8d60929d88653c0d65f98254f8b51515d7441b51e199"
+      }
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man",
+      "commonsTitle": "File:RWS1909 - 12 Hanged Man.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_12_Hanged_Man.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/ab/RWS1909_-_12_Hanged_Man.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 812,
+      "originalHeight": 1423,
+      "originalSHA1": "febc002a69b63c07fd4251b1879655b97caf89e5",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/12.webp",
+        "width": 720,
+        "height": 1262,
+        "bytes": 281894,
+        "sha256": "22ace93e4ca0e01ae0fcc89f30b5141fcfd794ffead7143b5938afd564f351cc"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/12-thumb.webp",
+        "width": 320,
+        "height": 561,
+        "bytes": 51190,
+        "sha256": "5711021cf402b010af22a7080c5ae097d7ebfa594a8bab196f3900c6c624b500"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Death",
+      "commonsTitle": "File:RWS1909 - 13 Death.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_13_Death.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/e9/RWS1909_-_13_Death.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 831,
+      "originalHeight": 1424,
+      "originalSHA1": "dcbbc5c8c3aa74ea1696221e5fb0e5c074f1a4b6",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/13.webp",
+        "width": 720,
+        "height": 1234,
+        "bytes": 286338,
+        "sha256": "b2f616000a55d3556401d7170d421bc3114de433a4d815df0c4fe0b0ddb22668"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/13-thumb.webp",
+        "width": 320,
+        "height": 548,
+        "bytes": 62862,
+        "sha256": "19be891e5adc1059f72e7dcc75db357a52ff16d7ca35418a713751ac28baa0b5"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Temperance",
+      "commonsTitle": "File:RWS1909 - 14 Temperance.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_14_Temperance.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/9/9e/RWS1909_-_14_Temperance.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 826,
+      "originalHeight": 1433,
+      "originalSHA1": "09c8636d8b45624b54bee550cfaad6f241facdd9",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/14.webp",
+        "width": 720,
+        "height": 1249,
+        "bytes": 294296,
+        "sha256": "3ad6d40dc9f943614f7197ee9a1cfb74faa735d3fa2aa81ef4d3075bafcab5bf"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/14-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 67076,
+        "sha256": "6e159b3ab62e8896078354c3318a6adc23f7bcfd91cdf288166089982c77aa9d"
+      }
+    },
+    {
+      "id": 15,
+      "name": "The Devil",
+      "commonsTitle": "File:RWS1909 - 15 Devil.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_15_Devil.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/RWS1909_-_15_Devil.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 849,
+      "originalHeight": 1453,
+      "originalSHA1": "b793a370055a9d8747c2d7160b9b6e0a6f1ac60e",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/15.webp",
+        "width": 720,
+        "height": 1232,
+        "bytes": 301140,
+        "sha256": "997e8e1a7a0038bdf24140326a81b435172d834897b11e1d4e3cf8f4ba86505c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/15-thumb.webp",
+        "width": 320,
+        "height": 548,
+        "bytes": 58322,
+        "sha256": "250fc5bd4f1b1bbda71b3ed240aa95311dc67bdbb1fd86909675b06c8d22b650"
+      }
+    },
+    {
+      "id": 16,
+      "name": "The Tower",
+      "commonsTitle": "File:RWS1909 - 16 Tower.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_16_Tower.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/2a/RWS1909_-_16_Tower.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 814,
+      "originalHeight": 1424,
+      "originalSHA1": "ee4db996b152b43ea975fa00827b91cd23c3f6a5",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/16.webp",
+        "width": 720,
+        "height": 1260,
+        "bytes": 280682,
+        "sha256": "1a87fd1766969d5d7eedca27da4b1bd9626861e24203a2a3205bd79dc91f002c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/16-thumb.webp",
+        "width": 320,
+        "height": 560,
+        "bytes": 60962,
+        "sha256": "6aaee626d3f69dddecaaa8b3d04404daf5d564e8c07cc94a343f5a9e10a4ae4e"
+      }
+    },
+    {
+      "id": 17,
+      "name": "The Star",
+      "commonsTitle": "File:RWS1909 - 17 Star.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_17_Star.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/4/44/RWS1909_-_17_Star.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1421,
+      "originalSHA1": "8fe3ff3e770ebd930ff381524a533d159a602d9a",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/17.webp",
+        "width": 720,
+        "height": 1219,
+        "bytes": 277856,
+        "sha256": "6f40316d1497e83ad732d344575c13b79858952f51e8c18269b826f577b73af5"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/17-thumb.webp",
+        "width": 320,
+        "height": 542,
+        "bytes": 54850,
+        "sha256": "ce1a77faa9c5bf8de1c04626d800fe8b0f0c01be0e1aff01cca6d75ecf2987f7"
+      }
+    },
+    {
+      "id": 18,
+      "name": "The Moon",
+      "commonsTitle": "File:RWS1909 - 18 Moon.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_18_Moon.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/3/3d/RWS1909_-_18_Moon.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 814,
+      "originalHeight": 1441,
+      "originalSHA1": "e93a590ffb090fd1d065aae8df3d84521662fe70",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/18.webp",
+        "width": 720,
+        "height": 1275,
+        "bytes": 326774,
+        "sha256": "681ce51c469d76713929649ccbd0275630a7242ee4fb459bf8a4c81f6b81f8ce"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/18-thumb.webp",
+        "width": 320,
+        "height": 566,
+        "bytes": 62804,
+        "sha256": "500363cf6d0110399b42fd22cfea09a333a14d402d23b173dbebfbaa1af25ef9"
+      }
+    },
+    {
+      "id": 19,
+      "name": "The Sun",
+      "commonsTitle": "File:RWS1909 - 19 Sun.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_19_Sun.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/e1/RWS1909_-_19_Sun.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 848,
+      "originalHeight": 1459,
+      "originalSHA1": "256223bdc71483816a85d6ecd90848865eecd830",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/19.webp",
+        "width": 720,
+        "height": 1239,
+        "bytes": 286894,
+        "sha256": "b0d4caba7aa6fed2dc5271a976f264963c52df87b94e196d8d62b80edef73995"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/19-thumb.webp",
+        "width": 320,
+        "height": 551,
+        "bytes": 60402,
+        "sha256": "3fb101b220fdbd1b965beba1e1347a208d514063394ce331f04abcbd40739c1a"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Judgement",
+      "commonsTitle": "File:RWS1909 - 20 Judgement.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_20_Judgement.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/8b/RWS1909_-_20_Judgement.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 832,
+      "originalHeight": 1421,
+      "originalSHA1": "01c0116793f940a6419bcea94cd4dc2e2ccbc2cb",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/20.webp",
+        "width": 720,
+        "height": 1230,
+        "bytes": 298494,
+        "sha256": "25d18919f6b73c93fa394a4072439c4c8ffbad877502ed72950e45adf1804b7c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/20-thumb.webp",
+        "width": 320,
+        "height": 547,
+        "bytes": 61998,
+        "sha256": "d2b4747e620190a37914147da73c5c301b9bf31fd09766283b395eaea385a3a8"
+      }
+    },
+    {
+      "id": 21,
+      "name": "The World",
+      "commonsTitle": "File:RWS1909 - 21 World.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_21_World.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/RWS1909_-_21_World.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 833,
+      "originalHeight": 1418,
+      "originalSHA1": "30bda621ac0788351812ee32dba33ebfd98ad8c1",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/21.webp",
+        "width": 720,
+        "height": 1226,
+        "bytes": 306416,
+        "sha256": "dde3b4b1d5a676646c75402f02c4417b1b9e5f82858fc807cf8362f9ececa12d"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/21-thumb.webp",
+        "width": 320,
+        "height": 545,
+        "bytes": 62674,
+        "sha256": "68a54538cd310d99990be3924bf5b7ebb92d11df45eb71e840d3b1d5d3bb725c"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Ace of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 01.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_01.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/ee/RWS1909_-_Wands_01.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 815,
+      "originalHeight": 1448,
+      "originalSHA1": "2a6abe97af731ea48dc6d9c2d32eccb0e31381ad",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/22.webp",
+        "width": 720,
+        "height": 1279,
+        "bytes": 238360,
+        "sha256": "5a493ecf82270f135a1aa394e8499737069f9cc4a7e6bfe5220fcc70622fa38c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/22-thumb.webp",
+        "width": 320,
+        "height": 569,
+        "bytes": 43324,
+        "sha256": "ca3533076389f900ff90a9d19f97dc334fd28f6c193e84ac0f8e3722c047af21"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Two of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 02.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_02.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/06/RWS1909_-_Wands_02.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 844,
+      "originalHeight": 1435,
+      "originalSHA1": "8996d54b2ddf63403405ff651274315cbcd36592",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/23.webp",
+        "width": 720,
+        "height": 1224,
+        "bytes": 251572,
+        "sha256": "0b94c741791772ccf6e20d92cfc86ea9b41b0ce448047f8dfddd8299d6d3f7ea"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/23-thumb.webp",
+        "width": 320,
+        "height": 544,
+        "bytes": 48872,
+        "sha256": "29f09870402788315ad05b3d96d2d31f1091220511f16c0fbccded5c1a79d95d"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Three of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 03.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_03.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/50/RWS1909_-_Wands_03.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1414,
+      "originalSHA1": "d057c4173044c69b083c9f72c05db86249fcf2d4",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/24.webp",
+        "width": 720,
+        "height": 1248,
+        "bytes": 308502,
+        "sha256": "54994bcbb53e5d12ce3d0251eea820004753f10d8878eb678ec7c0c15652ad61"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/24-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 53326,
+        "sha256": "7ca2fc797f50dbe28e520e395788dfaf81da69ed1cc8a7360d8dfcfdee8792b9"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Four of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 04.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_04.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/b5/RWS1909_-_Wands_04.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 836,
+      "originalHeight": 1428,
+      "originalSHA1": "be796bf88a4db62f95ea829450250530739362cc",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/25.webp",
+        "width": 720,
+        "height": 1230,
+        "bytes": 215332,
+        "sha256": "a3262e738a8b3171474c3dbe3bb99cef803987de74e344a2e36a6dae62c6d917"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/25-thumb.webp",
+        "width": 320,
+        "height": 547,
+        "bytes": 48440,
+        "sha256": "e0aa3be136c8551b8592b8164c1d032632efd23256f192ebd016f4487b1769dc"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Five of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 05.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_05.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/79/RWS1909_-_Wands_05.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 815,
+      "originalHeight": 1438,
+      "originalSHA1": "cc7ef5a5fe39c1c6accc417059d74f37ffa13e54",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/26.webp",
+        "width": 720,
+        "height": 1270,
+        "bytes": 265186,
+        "sha256": "afc879823bbf1f7086f1403c6f690b2061869251dd0440a66b9af2d659b7008d"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/26-thumb.webp",
+        "width": 320,
+        "height": 565,
+        "bytes": 56404,
+        "sha256": "5926ecea3f3b35727719583cb9a786cfe3869952b71f3e1c668fbdaff545e3d6"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Six of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 06.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_06.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/2c/RWS1909_-_Wands_06.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 843,
+      "originalHeight": 1445,
+      "originalSHA1": "b0f94ceb1412f2e44380988bb0bc7c78ab690043",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/27.webp",
+        "width": 720,
+        "height": 1234,
+        "bytes": 248672,
+        "sha256": "15465248bb3967889b7f33800ecf885bc5276a4244003bd2da75e9aff6c802ea"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/27-thumb.webp",
+        "width": 320,
+        "height": 549,
+        "bytes": 52674,
+        "sha256": "202e75088fb88f70e179b6e47ba65da03cd6b36fc3b44f5ed47a333601c29ffa"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Seven of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 07.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_07.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/1/18/RWS1909_-_Wands_07.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 821,
+      "originalHeight": 1425,
+      "originalSHA1": "62b66676acc61f82decd75b3456377450f483d50",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/28.webp",
+        "width": 720,
+        "height": 1250,
+        "bytes": 260322,
+        "sha256": "52a8c42acbf2a6075e01d9bbea177d4e9b0a8a060791d497b12e059f164872a9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/28-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 54994,
+        "sha256": "12be846c90b2ec59bd83d55c5fee646376ba9368bc649e0f3b758b1ac54874b2"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Eight of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 08.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_08.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/7e/RWS1909_-_Wands_08.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 840,
+      "originalHeight": 1425,
+      "originalSHA1": "c14ce9e3a5b996145e218a231fc4381c429ef4e6",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/29.webp",
+        "width": 720,
+        "height": 1221,
+        "bytes": 236200,
+        "sha256": "1438f1bc44266e87a87964f8abb20eecc5b0ab5f4315200ff6fee0c30cad8365"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/29-thumb.webp",
+        "width": 320,
+        "height": 543,
+        "bytes": 51056,
+        "sha256": "4cd2f7fad62057446b5489aaa673dda0cb33e25935e8711ec1e448c99d7af7d1"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Nine of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 09.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_09.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/55/RWS1909_-_Wands_09.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 819,
+      "originalHeight": 1434,
+      "originalSHA1": "1a9c12d8bfbcbb7de4744db0ee6e56fb8bc8a240",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/30.webp",
+        "width": 720,
+        "height": 1261,
+        "bytes": 303248,
+        "sha256": "28d10549a22b75d01ca31a3de2d2a680a4aba03d21d0d7bb9b1596cc6dbe985c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/30-thumb.webp",
+        "width": 320,
+        "height": 560,
+        "bytes": 58454,
+        "sha256": "23de42ea2bcfb98930880aa4e659f3022db018b03be3229781f8dc604e3b49ea"
+      }
+    },
+    {
+      "id": 31,
+      "name": "Ten of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 10.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_10.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/80/RWS1909_-_Wands_10.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1439,
+      "originalSHA1": "da85c787b930fd75cff0e5c322733917e5facdaa",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/31.webp",
+        "width": 720,
+        "height": 1235,
+        "bytes": 267808,
+        "sha256": "59479cd39f434eb2d2cf37b4d334e29bdc01f709f7cec18565e61e3513af5628"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/31-thumb.webp",
+        "width": 320,
+        "height": 549,
+        "bytes": 55708,
+        "sha256": "ec7d5ee65b51f2c329195f39aba53cf82be872f2f2b2af6a22bf5b6489aff598"
+      }
+    },
+    {
+      "id": 32,
+      "name": "Page of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 11.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_11.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/bd/RWS1909_-_Wands_11.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 820,
+      "originalHeight": 1423,
+      "originalSHA1": "596049095199989193bd97a6687bb9a10e67b8f4",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/32.webp",
+        "width": 720,
+        "height": 1249,
+        "bytes": 344700,
+        "sha256": "fef4004e06d3813ed52803e4364c3fce5de1c7575d1cf2965a052f3ccd182a8e"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/32-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 56032,
+        "sha256": "4a99be7ec7d2f10fa07fa88ba37df675e39fcabf110ca3e7aa8b24307928df0c"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Knight of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 12.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_12.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/77/RWS1909_-_Wands_12.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 833,
+      "originalHeight": 1415,
+      "originalSHA1": "748838398108af84c8346a94b1aa3fdcb3ceb1a0",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/33.webp",
+        "width": 720,
+        "height": 1223,
+        "bytes": 323614,
+        "sha256": "33901e151f235d34c9d63896fdd760221e4d883a8518fcd94f7dddadbf73142e"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/33-thumb.webp",
+        "width": 320,
+        "height": 544,
+        "bytes": 57870,
+        "sha256": "472958ba1dc1ef30c57150dce52e7f6b97ab5d3435c0eed2a1bbef2405d09553"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Queen of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 13.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_13.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/50/RWS1909_-_Wands_13.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 822,
+      "originalHeight": 1446,
+      "originalSHA1": "11f1e480eca9badc28582a21f8b5c6f9353a3820",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/34.webp",
+        "width": 720,
+        "height": 1267,
+        "bytes": 352060,
+        "sha256": "f991bdbe133da381558c47ff68759c9f08c3d08441a9b36bfb521e01f61332b8"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/34-thumb.webp",
+        "width": 320,
+        "height": 563,
+        "bytes": 68566,
+        "sha256": "49750230c5e7756e1658289c55a7dee6457234efc7205c61c966704ddab26ad4"
+      }
+    },
+    {
+      "id": 35,
+      "name": "King of Wands",
+      "commonsTitle": "File:RWS1909 - Wands 14.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_14.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/6/62/RWS1909_-_Wands_14.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 851,
+      "originalHeight": 1441,
+      "originalSHA1": "86a68253d0fbf38c2d82281bd434ae5844b6722c",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/35.webp",
+        "width": 720,
+        "height": 1219,
+        "bytes": 333730,
+        "sha256": "5f3d6dfe44eb89813c0408dbbef12a272bde08a5b114bb5e05cc1fcc08c3c474"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/35-thumb.webp",
+        "width": 320,
+        "height": 542,
+        "bytes": 63174,
+        "sha256": "98546c8c981cb7f30338b3147e9344bc88d0d8289282ee25995e752677024509"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Ace of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 01.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_01.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/9/92/RWS1909_-_Cups_01.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1418,
+      "originalSHA1": "a61029604527a63ab98d6544db94ea18ede16166",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/36.webp",
+        "width": 720,
+        "height": 1251,
+        "bytes": 274116,
+        "sha256": "50d29929fff455b02a3a926313e6362cf7d849cf89ffcfc122556db31994d727"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/36-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 53372,
+        "sha256": "eac453dc6dab151977557280ee5d3ba2f1af17bbc798457879299342d33c0048"
+      }
+    },
+    {
+      "id": 37,
+      "name": "Two of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 02.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_02.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/4/47/RWS1909_-_Cups_02.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 833,
+      "originalHeight": 1413,
+      "originalSHA1": "1098be1e1118675abd630e26d06ff32dc2d9d339",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/37.webp",
+        "width": 720,
+        "height": 1221,
+        "bytes": 279674,
+        "sha256": "9cbab94116d7fefe4907e17d96ff1729e98f648326ee52a9969ab7c62271797b"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/37-thumb.webp",
+        "width": 320,
+        "height": 543,
+        "bytes": 54884,
+        "sha256": "d9883be57900b1fc0fc5c8c63c80bce66a6b6e8079e610d9e51a7f32e85742fc"
+      }
+    },
+    {
+      "id": 38,
+      "name": "Three of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 03.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_03.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/01/RWS1909_-_Cups_03.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1448,
+      "originalSHA1": "cc8a792e6f974fbdd83616b2b02db0ada977ddb8",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/38.webp",
+        "width": 720,
+        "height": 1275,
+        "bytes": 318112,
+        "sha256": "0c5cefbb5b4f6177c117c0fcb6634dedc9d595bd5bca98c47548f7433c03226b"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/38-thumb.webp",
+        "width": 320,
+        "height": 566,
+        "bytes": 63156,
+        "sha256": "a57994cb576e41948cfc712793878b2a2e3a0baf314ea0dc38da4bd289e31f72"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Four of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 04.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_04.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a6/RWS1909_-_Cups_04.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1433,
+      "originalSHA1": "33e65a2df226fa908508c99628ca3e47a66afa43",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/39.webp",
+        "width": 720,
+        "height": 1230,
+        "bytes": 275424,
+        "sha256": "c07f348a2ad8bc3c1063a2a11ee45e38c55373478b14dfa62fd4658a6dc050fe"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/39-thumb.webp",
+        "width": 320,
+        "height": 547,
+        "bytes": 59016,
+        "sha256": "ac14db86555d58ae02d0af771c62989970644cdb04d4731da18088d9d6e1703c"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Five of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 05.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_05.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/1/15/RWS1909_-_Cups_05.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1430,
+      "originalSHA1": "638fa67baf2647e11b1f7a773999623b5257ce01",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/40.webp",
+        "width": 720,
+        "height": 1259,
+        "bytes": 203734,
+        "sha256": "25e49556663f27f6eaabbc0d270cc831c317aa1e3b82c1ac9d3be6266f94c7d9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/40-thumb.webp",
+        "width": 320,
+        "height": 559,
+        "bytes": 43172,
+        "sha256": "7f66da7c9476150b6cda0c1399bbeb12031da0de0c81547bf89d66749f125020"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Six of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 06.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_06.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/6/68/RWS1909_-_Cups_06.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 834,
+      "originalHeight": 1424,
+      "originalSHA1": "1596149448f8a9ebce9eafeaa4b5735d37257309",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/41.webp",
+        "width": 720,
+        "height": 1229,
+        "bytes": 293566,
+        "sha256": "7037e69690854ec74a990a8c4abd9003edfcf4b07335c486c31f130c1b6d0c3b"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/41-thumb.webp",
+        "width": 320,
+        "height": 546,
+        "bytes": 63008,
+        "sha256": "f3b2c474b1d07c9d132d7fe8bbab61b5539254d7d34065313a8b6f798b21986c"
+      }
+    },
+    {
+      "id": 42,
+      "name": "Seven of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 07.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_07.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/bb/RWS1909_-_Cups_07.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1451,
+      "originalSHA1": "ff9a9ff2a9c5f03bbc67c2e283c32e2dccdcb4e7",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/42.webp",
+        "width": 720,
+        "height": 1279,
+        "bytes": 253738,
+        "sha256": "d9cc31ab6e6f8abd97d00ad07c4ec3d3cfb1fdcba925bd425e17f088cf18d40e"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/42-thumb.webp",
+        "width": 320,
+        "height": 568,
+        "bytes": 58138,
+        "sha256": "fdb694ce21e81cb56f1667c37866ed78fa81584578cc65503a4d3d2088aa1a60"
+      }
+    },
+    {
+      "id": 43,
+      "name": "Eight of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 08.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_08.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/f/f9/RWS1909_-_Cups_08.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 830,
+      "originalHeight": 1438,
+      "originalSHA1": "7c97829e6fe0d84d7f22b530d976f15b815639a9",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/43.webp",
+        "width": 720,
+        "height": 1247,
+        "bytes": 251414,
+        "sha256": "be1a722cf0c4a711e2c266597574d5f473897031e53a70a1d4baef82f065d64f"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/43-thumb.webp",
+        "width": 320,
+        "height": 554,
+        "bytes": 52692,
+        "sha256": "451f12cdbe05ce2f30e6e4746c2f8806a621cc35ac632a2b88def41a71c03001"
+      }
+    },
+    {
+      "id": 44,
+      "name": "Nine of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 09.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_09.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/d/df/RWS1909_-_Cups_09.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1421,
+      "originalSHA1": "c0154ff5872aa37582669930ecaa992be460c11b",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/44.webp",
+        "width": 720,
+        "height": 1251,
+        "bytes": 228720,
+        "sha256": "c21c27c12a5dab3552091244347f723eff99590447237e9b58fd147d37b255f6"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/44-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 55000,
+        "sha256": "98eff375afbcb3fd3915f36c3541ca68727578b2c54c851475744fcb0e2389e6"
+      }
+    },
+    {
+      "id": 45,
+      "name": "Ten of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 10.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_10.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b/RWS1909_-_Cups_10.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 841,
+      "originalHeight": 1420,
+      "originalSHA1": "918e59c520aedff119e1b404ea24ed67ada227e1",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/45.webp",
+        "width": 720,
+        "height": 1216,
+        "bytes": 306972,
+        "sha256": "6b64938961b5ff5e3b86c9e74d6ddad05d4f7d27c69a435dcc8b8045f30bb289"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/45-thumb.webp",
+        "width": 320,
+        "height": 540,
+        "bytes": 55138,
+        "sha256": "083906ea8def9a955e223edb6d85bc5af8be980a86a5ece2ff6e21af908ab6db"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Page of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 11.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_11.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/d/d4/RWS1909_-_Cups_11.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1436,
+      "originalSHA1": "3a51d2e1b0cf4115485136a9f818ee4f37c4e201",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/46.webp",
+        "width": 720,
+        "height": 1266,
+        "bytes": 312876,
+        "sha256": "87729e1c732ded933ba64aa9ab701394206d1b40ef772ad511ca2e38ef526f74"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/46-thumb.webp",
+        "width": 320,
+        "height": 562,
+        "bytes": 54916,
+        "sha256": "f5d3589a45cc5be279f0a7876a2c4ebed28ced7fb4e3bb3ae5e033e9ef5adf02"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Knight of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 12.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_12.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/06/RWS1909_-_Cups_12.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 836,
+      "originalHeight": 1436,
+      "originalSHA1": "227eaddf702f27ae24053ba81a09425629ba6013",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/47.webp",
+        "width": 720,
+        "height": 1237,
+        "bytes": 277268,
+        "sha256": "ffb5f2885c892a5cd797f59834ec69db92b78a3087ebcb7c8881ded339732653"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/47-thumb.webp",
+        "width": 320,
+        "height": 550,
+        "bytes": 54304,
+        "sha256": "59736d6b9454676c98e394fc09c9b1107527d269106d488105ccf5d51deda7c8"
+      }
+    },
+    {
+      "id": 48,
+      "name": "Queen of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 13.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_13.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/9/91/RWS1909_-_Cups_13.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 820,
+      "originalHeight": 1425,
+      "originalSHA1": "18eadde622eadbd4ac8c97f74a79fc6a2a48068a",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/48.webp",
+        "width": 720,
+        "height": 1251,
+        "bytes": 276766,
+        "sha256": "fcd71a2db1e3f2bd2c161c4f915a62aa4b9d65191d7b619ad0ca7c58a1ea6825"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/48-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 61768,
+        "sha256": "287eb2787d5b1192c1f4a54def0d2f712bb575f4a25d41de15f1b483fadba1a5"
+      }
+    },
+    {
+      "id": 49,
+      "name": "King of Cups",
+      "commonsTitle": "File:RWS1909 - Cups 14.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_14.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/be/RWS1909_-_Cups_14.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 838,
+      "originalHeight": 1424,
+      "originalSHA1": "e13c60e05de19ce5884d800a52aa0095eb39e4e1",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/49.webp",
+        "width": 720,
+        "height": 1223,
+        "bytes": 276412,
+        "sha256": "e39230dd693f967944f44ec93fc1925cff513dc4510351a6cbd6a2209b1612e9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/49-thumb.webp",
+        "width": 320,
+        "height": 544,
+        "bytes": 56248,
+        "sha256": "bc8a59dc32da53f56b11f8bb29ad95de1c05439c6dce189fc657d3240c62aed1"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Ace of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 01.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_01.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/87/RWS1909_-_Swords_01.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 826,
+      "originalHeight": 1443,
+      "originalSHA1": "cf270e15237246403254bf1b3a766ae94c49f253",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/50.webp",
+        "width": 720,
+        "height": 1258,
+        "bytes": 252508,
+        "sha256": "472a28eed360b75081c6f7d1335aa7ed49d3fc271c8142f51a84eed1b491cb85"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/50-thumb.webp",
+        "width": 320,
+        "height": 559,
+        "bytes": 45034,
+        "sha256": "a341b6a0c6d47e353fc2e5205319e91ff15010d327669e61e8318a4d3967025e"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Two of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 02.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_02.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/d/da/RWS1909_-_Swords_02.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1432,
+      "originalSHA1": "2d9586f8da5e70a9e5d888b969745a478bc8a87c",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/51.webp",
+        "width": 720,
+        "height": 1229,
+        "bytes": 236560,
+        "sha256": "cac5e85c49abffe6bcb73c672e32bb98c43a88db7ed265614ef4153912c164dc"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/51-thumb.webp",
+        "width": 320,
+        "height": 546,
+        "bytes": 49174,
+        "sha256": "4715dc18714ceb7a07dd75c960f64616c1e08c4a2e632217437b09febd8aba9d"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Three of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 03.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_03.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/01/RWS1909_-_Swords_03.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1418,
+      "originalSHA1": "b52a95f47bbe613f7bcd52253173edffb54a3bd0",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/52.webp",
+        "width": 720,
+        "height": 1248,
+        "bytes": 211882,
+        "sha256": "d0f414c2ca9f1570d7e6a5cc3d79668bc87079142891a01e1dc48dbb1ad81ce4"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/52-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 40484,
+        "sha256": "598031e70282054b390e1fb8e8a1892b4bf06bfa9717587d0e3e660bb8110689"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Four of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 04.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_04.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/RWS1909_-_Swords_04.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 834,
+      "originalHeight": 1418,
+      "originalSHA1": "00885a5e82a50798bf4741fd8b8b2be3b4976d26",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/53.webp",
+        "width": 720,
+        "height": 1224,
+        "bytes": 234462,
+        "sha256": "0e53e7d940e7e517ea740b4a631736565a6e72b989d82848a113d578be4fe059"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/53-thumb.webp",
+        "width": 320,
+        "height": 544,
+        "bytes": 46436,
+        "sha256": "753e872744ba4e73e17dbb83580a62ffe81f31585a284689332f0fb7296b28f0"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Five of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 05.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_05.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/bb/RWS1909_-_Swords_05.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1434,
+      "originalSHA1": "a9000d217da7f818f0311afbf2ca7fd5975e6249",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/54.webp",
+        "width": 720,
+        "height": 1265,
+        "bytes": 319616,
+        "sha256": "f22d26dda42151bc1ac96fb48784b5a16acd858e95e0d86e353525b66a9e58f9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/54-thumb.webp",
+        "width": 320,
+        "height": 562,
+        "bytes": 60706,
+        "sha256": "944349d5bdd9716d0660036891c428b0912d1263d7f3287f339b2731a9382319"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Six of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 06.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_06.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a6/RWS1909_-_Swords_06.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 842,
+      "originalHeight": 1440,
+      "originalSHA1": "408f6a2dd6ab0a8aa51a8e7ce606f3627679e383",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/55.webp",
+        "width": 720,
+        "height": 1231,
+        "bytes": 258286,
+        "sha256": "e4035f270107b6ae46f66db7386881aa6a8b26d4adfdbaf3ef45251474c6e390"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/55-thumb.webp",
+        "width": 320,
+        "height": 547,
+        "bytes": 45704,
+        "sha256": "e6749753d8bca37c9c0a7fc7190d461d6f2fd4e4c89ead2783262e9146b992b6"
+      }
+    },
+    {
+      "id": 56,
+      "name": "Seven of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 07.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_07.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/RWS1909_-_Swords_07.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1433,
+      "originalSHA1": "984b59af83c82ce361bb1ef9a7259b363fdf1c4a",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/56.webp",
+        "width": 720,
+        "height": 1264,
+        "bytes": 220942,
+        "sha256": "20093b74a93b050d5f5103ff3e1678b36dca49ce0e6366d2b8f1650116a5e1c1"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/56-thumb.webp",
+        "width": 320,
+        "height": 562,
+        "bytes": 46226,
+        "sha256": "5801816e325715bfda3c5641842e0d8d29b4d6ca3d937c9254a24f418441954f"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Eight of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 08.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_08.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/f/f7/RWS1909_-_Swords_08.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 838,
+      "originalHeight": 1428,
+      "originalSHA1": "07d70c55a3095a8f8a6879b87a0af7a6f9a46a4b",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/57.webp",
+        "width": 720,
+        "height": 1227,
+        "bytes": 264974,
+        "sha256": "2165fe4095e1c049b3590830cdd3888ef232f1c9cb520c179dec9221e19ee27e"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/57-thumb.webp",
+        "width": 320,
+        "height": 545,
+        "bytes": 52384,
+        "sha256": "30bdf68c20ce6ba86c5cce6c751be9d873d928f2136f0c7c5f0fa01833003a33"
+      }
+    },
+    {
+      "id": 58,
+      "name": "Nine of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 09.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_09.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a5/RWS1909_-_Swords_09.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1453,
+      "originalSHA1": "d16c54558b5e8ff01e4a6aae84cac22696d993f4",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/58.webp",
+        "width": 720,
+        "height": 1280,
+        "bytes": 291150,
+        "sha256": "a12e0b5a8d5497592a58bcda1fe882cdec02c635fdbda305133afdcf47fcec15"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/58-thumb.webp",
+        "width": 320,
+        "height": 569,
+        "bytes": 57310,
+        "sha256": "fc401ce8afa8da7b5a3c708605f55cc5c65e33bd3f2bff9010c77a8c2c1261fa"
+      }
+    },
+    {
+      "id": 59,
+      "name": "Ten of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 10.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_10.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/eb/RWS1909_-_Swords_10.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 846,
+      "originalHeight": 1453,
+      "originalSHA1": "7dbccb1863a686e33332a138ba738e7fa61e981a",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/59.webp",
+        "width": 720,
+        "height": 1237,
+        "bytes": 238162,
+        "sha256": "58c75bafc07b0d000fec1e361da0d47fda951c429b8a971af40937c384faf6f2"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/59-thumb.webp",
+        "width": 320,
+        "height": 550,
+        "bytes": 53268,
+        "sha256": "27cba1609d8151465a664888f1ae04338cd4b9541e65bc8b2e17a7eeb8e058e3"
+      }
+    },
+    {
+      "id": 60,
+      "name": "Page of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 11.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_11.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b/RWS1909_-_Swords_11.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1430,
+      "originalSHA1": "768347cafa77e469ea980625a882f0c7deeea15b",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/60.webp",
+        "width": 720,
+        "height": 1259,
+        "bytes": 257854,
+        "sha256": "26d165e2dbf0f63534898d55bd08ae1b8845b6532b78b8077c525e9fa3d04f7a"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/60-thumb.webp",
+        "width": 320,
+        "height": 559,
+        "bytes": 53030,
+        "sha256": "018e0df8b0080bad69407a3d08f40521a4587db86705b312abf99617d5f1a7ed"
+      }
+    },
+    {
+      "id": 61,
+      "name": "Knight of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 12.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_12.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/RWS1909_-_Swords_12.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 837,
+      "originalHeight": 1419,
+      "originalSHA1": "fde92a3d799458dc155e20395a5af2ea97e8aa55",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/61.webp",
+        "width": 720,
+        "height": 1221,
+        "bytes": 257652,
+        "sha256": "aaad0999d81b9a7e6c3c7124fa5ed9115e3834f80f6734d4e6eb2bff66390cf7"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/61-thumb.webp",
+        "width": 320,
+        "height": 543,
+        "bytes": 56570,
+        "sha256": "0068c741411cd1928572be155d993475429efd6e8a359855f74da5fe12b76ee1"
+      }
+    },
+    {
+      "id": 62,
+      "name": "Queen of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 13.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_13.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/f/fd/RWS1909_-_Swords_13.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 819,
+      "originalHeight": 1452,
+      "originalSHA1": "0264b7ef785ef66b13a05f876d20f59525332a79",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/62.webp",
+        "width": 720,
+        "height": 1276,
+        "bytes": 262984,
+        "sha256": "3600966ac950c456f19882983ec4ac131ea0b046a03e8baa61510ef974173cf3"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/62-thumb.webp",
+        "width": 320,
+        "height": 567,
+        "bytes": 57158,
+        "sha256": "08520d238f65ef082a39fb5ca44d1993bf1e1c1e522512a915a467a8bac1fa5d"
+      }
+    },
+    {
+      "id": 63,
+      "name": "King of Swords",
+      "commonsTitle": "File:RWS1909 - Swords 14.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_14.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/f/f4/RWS1909_-_Swords_14.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 846,
+      "originalHeight": 1442,
+      "originalSHA1": "b184acadfdaf8857ccd9648fca15c568ca0d6f01",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/63.webp",
+        "width": 720,
+        "height": 1227,
+        "bytes": 275956,
+        "sha256": "65c41f10aee107e73cc2a4ae7347f2b759632b33ccccc27f7c25c588c6535aff"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/63-thumb.webp",
+        "width": 320,
+        "height": 545,
+        "bytes": 55392,
+        "sha256": "7b4f6b1258a592f59dcab5729b032f0db9f0d108f685ee697ed61515e95aaf7f"
+      }
+    },
+    {
+      "id": 64,
+      "name": "Ace of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 01.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_01.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a9/RWS1909_-_Pentacles_01.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 819,
+      "originalHeight": 1423,
+      "originalSHA1": "0b5ad3db2563633c91137e305e5fc46667eab35c",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/64.webp",
+        "width": 720,
+        "height": 1251,
+        "bytes": 251616,
+        "sha256": "72f8f7a01bc681147ff69e2fb6cace4077f1b4b9e02bcda94d00acb2fe66554b"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/64-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 47850,
+        "sha256": "43f50102ca708b22dccf368e5957f3375ccdaaacf457d9b31a6aee923138a36f"
+      }
+    },
+    {
+      "id": 65,
+      "name": "Two of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 02.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_02.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/c/c2/RWS1909_-_Pentacles_02.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 833,
+      "originalHeight": 1423,
+      "originalSHA1": "4882f1a48e9da24dbc2a5299b8c32b6d91d94c31",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/65.webp",
+        "width": 720,
+        "height": 1230,
+        "bytes": 306234,
+        "sha256": "9b311f1617b985394205b792c2df2144d21ff1e6b4123d5e8509a377c512ba7c"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/65-thumb.webp",
+        "width": 320,
+        "height": 547,
+        "bytes": 47994,
+        "sha256": "4fa736c3aa948bb57ec4db84cc6602247893b48fff80bdb01ab4844ef79ee11e"
+      }
+    },
+    {
+      "id": 66,
+      "name": "Three of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 03.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_03.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/5e/RWS1909_-_Pentacles_03.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1443,
+      "originalSHA1": "26e96d1971c39671991ed2b05d953f436c6b7429",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/66.webp",
+        "width": 720,
+        "height": 1272,
+        "bytes": 314656,
+        "sha256": "b003b6711030b44cfa9950de71e6fc42a9eb7c232a8ec57633e5eb214b702056"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/66-thumb.webp",
+        "width": 320,
+        "height": 565,
+        "bytes": 64896,
+        "sha256": "51db39ad6cc8e35fd51f7f5b11b3a1d9606d7a4a25289944ff8490efea8dfe57"
+      }
+    },
+    {
+      "id": 67,
+      "name": "Four of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 04.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_04.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/8c/RWS1909_-_Pentacles_04.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 843,
+      "originalHeight": 1449,
+      "originalSHA1": "28b0bf85a95a88405ce78d3fb505e9f68a77c953",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/67.webp",
+        "width": 720,
+        "height": 1238,
+        "bytes": 252832,
+        "sha256": "d85b1fbafabbb2e78f890e5c29325dd06f24d44ab69d0cd836ee54d5e4e3b3d9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/67-thumb.webp",
+        "width": 320,
+        "height": 550,
+        "bytes": 41774,
+        "sha256": "12af01b40fb3421587b6e5b798ddea9cdde61cb7b933d3945dd75b086ba6266b"
+      }
+    },
+    {
+      "id": 68,
+      "name": "Five of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 05.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_05.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/7d/RWS1909_-_Pentacles_05.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 823,
+      "originalHeight": 1412,
+      "originalSHA1": "7085962a7306001c6e2631d70f503ac94593a52f",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/68.webp",
+        "width": 720,
+        "height": 1235,
+        "bytes": 287562,
+        "sha256": "d9468cbf8d45f6fb3adabaf087c8126589dce0e96a422d97ded83e1b2abd9306"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/68-thumb.webp",
+        "width": 320,
+        "height": 549,
+        "bytes": 68586,
+        "sha256": "58342d63609e2c77778d95a77926a7be346abfa0980c80a3b295057d56835d53"
+      }
+    },
+    {
+      "id": 69,
+      "name": "Six of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 06.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_06.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/1/1a/RWS1909_-_Pentacles_06.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 840,
+      "originalHeight": 1415,
+      "originalSHA1": "81d52cf31f2ff57753cb6b391226fcc290e92058",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/69.webp",
+        "width": 720,
+        "height": 1213,
+        "bytes": 248438,
+        "sha256": "1dc2b9c4e82ead752cccfc2a9139626e7d5e2306af5ccfea7c1249a9cf21b8a7"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/69-thumb.webp",
+        "width": 320,
+        "height": 539,
+        "bytes": 48832,
+        "sha256": "792b3a0f46b2c5d35770585fcbc4a5dc20929ab8539b7b7f88c0c4bf765614f6"
+      }
+    },
+    {
+      "id": 70,
+      "name": "Seven of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 07.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_07.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/51/RWS1909_-_Pentacles_07.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 818,
+      "originalHeight": 1444,
+      "originalSHA1": "d8c0dc7c35cd3160d65883c25290465423afc48e",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/70.webp",
+        "width": 720,
+        "height": 1271,
+        "bytes": 312904,
+        "sha256": "465b1b997c472c04b5eb99874a449632a0fb778470f6db911ddbbbbd698612f5"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/70-thumb.webp",
+        "width": 320,
+        "height": 565,
+        "bytes": 57058,
+        "sha256": "f15a242a847a18a3c8e9be2d5762710b625c9fd652429f09021172bdf464a650"
+      }
+    },
+    {
+      "id": 71,
+      "name": "Eight of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 08.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_08.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/e6/RWS1909_-_Pentacles_08.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1452,
+      "originalSHA1": "9984e6f9251f129bca8617cdaccd2807ab2cbe33",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/71.webp",
+        "width": 720,
+        "height": 1246,
+        "bytes": 261706,
+        "sha256": "cb659563079bfe027c4c6de61d0f1db84bb43361f7aedb4db28ef6e730172369"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/71-thumb.webp",
+        "width": 320,
+        "height": 554,
+        "bytes": 49198,
+        "sha256": "bc5a17fddde16a4cadf5754e18986a415fa21af96886159bcf0ef61eb554646c"
+      }
+    },
+    {
+      "id": 72,
+      "name": "Nine of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 09.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_09.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/5/5e/RWS1909_-_Pentacles_09.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 817,
+      "originalHeight": 1420,
+      "originalSHA1": "e65e1704f10015f881de007d6a7a52bf8996743a",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/72.webp",
+        "width": 720,
+        "height": 1251,
+        "bytes": 243194,
+        "sha256": "ad46377f83b9570e3652bdc5c2ce4cfd5a77ad822335a5bedb479b1c2d322739"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/72-thumb.webp",
+        "width": 320,
+        "height": 556,
+        "bytes": 55368,
+        "sha256": "60a4b0b9c3245ed60f5af6f17e2adf68fa072ba1b5d8ce7dcc8f4a045b0f7950"
+      }
+    },
+    {
+      "id": 73,
+      "name": "Ten of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 10.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_10.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/b/bb/RWS1909_-_Pentacles_10.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 834,
+      "originalHeight": 1434,
+      "originalSHA1": "6d8eb5fe51bb7c63aecff6b4fc1f928ad3923842",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/73.webp",
+        "width": 720,
+        "height": 1238,
+        "bytes": 270964,
+        "sha256": "9ba53a0d2988b3dcab14d4902722db4f18004143c53a894152a4d4abd7290b56"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/73-thumb.webp",
+        "width": 320,
+        "height": 550,
+        "bytes": 63368,
+        "sha256": "73d9dc50da235a6554ee87b205a9c87d410fde51efdafa1aee19e1615e0f8c7a"
+      }
+    },
+    {
+      "id": 74,
+      "name": "Page of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 11.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_11.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/8/83/RWS1909_-_Pentacles_11.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 816,
+      "originalHeight": 1438,
+      "originalSHA1": "c2d6c49e9bf4b28a8025dc14521756ffb085f230",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/74.webp",
+        "width": 720,
+        "height": 1269,
+        "bytes": 235448,
+        "sha256": "50e81d99d14786d114fb18f6a3c16f3a44f77b7723bba47833ce76b88b0ced63"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/74-thumb.webp",
+        "width": 320,
+        "height": 564,
+        "bytes": 50178,
+        "sha256": "b0d5232dfd0bc14f9a082244cb417be298a7ea5eec21e7b0b157625c40ae8a71"
+      }
+    },
+    {
+      "id": 75,
+      "name": "Knight of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 12.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_12.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/RWS1909_-_Pentacles_12.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 844,
+      "originalHeight": 1440,
+      "originalSHA1": "1e061b55a627f1850fa93662d52a554142f836d4",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/75.webp",
+        "width": 720,
+        "height": 1228,
+        "bytes": 210518,
+        "sha256": "6ee0df47a8c023e4512a2763d7e058fb9d53ed97c1c58d7be8ba56d336ec4ff6"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/75-thumb.webp",
+        "width": 320,
+        "height": 546,
+        "bytes": 47796,
+        "sha256": "146976d080dfe788d3727877167e2729c9f2a8e7e6cd0275d4a303d73065c019"
+      }
+    },
+    {
+      "id": 76,
+      "name": "Queen of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 13.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_13.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/e1/RWS1909_-_Pentacles_13.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 825,
+      "originalHeight": 1431,
+      "originalSHA1": "15632022e52b8daea2d9376e71685cf83008b834",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/76.webp",
+        "width": 720,
+        "height": 1249,
+        "bytes": 331652,
+        "sha256": "87f90d79821fd9a80c09cc9a1bfe43dcdbaa3763acd296f0af2d2344b2ceaa77"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/76-thumb.webp",
+        "width": 320,
+        "height": 555,
+        "bytes": 73594,
+        "sha256": "fb4edfdc124a3a3929d33e60e21a2ae9028ebc23cd1ceef03f3f69829e0cb659"
+      }
+    },
+    {
+      "id": 77,
+      "name": "King of Pentacles",
+      "commonsTitle": "File:RWS1909 - Pentacles 14.jpeg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_14.jpeg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/e/ed/RWS1909_-_Pentacles_14.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 839,
+      "originalHeight": 1419,
+      "originalSHA1": "981124b4917c0114011de7b53995a5a50de9feb0",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/77.webp",
+        "width": 720,
+        "height": 1218,
+        "bytes": 258792,
+        "sha256": "a4e151368f7c7d10e192608b1a338ff165ea4c6c4927342a6075aa5a32d8381a"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/77-thumb.webp",
+        "width": 320,
+        "height": 541,
+        "bytes": 62384,
+        "sha256": "665910ace2d8ece217ec83bcae69e5f01be45181a9fc2b7469ade416097222b0"
+      }
+    },
+    {
+      "id": "back",
+      "name": "Roses & Lilies card back",
+      "commonsTitle": "File:Waite–Smith Tarot Roses and Lilies cropped.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 825,
+      "originalHeight": 1425,
+      "originalSHA1": "97c173e5eea7385447eec3da59619c4990aa778b",
+      "date": "1909",
+      "license": "Public domain",
+      "author": "Unknown; possibly Pamela Colman Smith",
+      "scanCredit": "Saskia Jansen",
+      "full": {
+        "file": "assets/rws-1909/back.webp",
+        "width": 720,
+        "height": 1244,
+        "bytes": 254726,
+        "sha256": "0ba87c057aed10ed34b6bf06cb43741a6b34e7498ec7c7ac65c2200485ab94c9"
+      },
+      "thumb": {
+        "file": "assets/rws-1909/back-thumb.webp",
+        "width": 320,
+        "height": 553,
+        "bytes": 71990,
+        "sha256": "474708793d9efcecd2a6d5cb772311823fc03b8196b6b8d237d013e803d5816c"
+      }
+    }
+  ]
+}
