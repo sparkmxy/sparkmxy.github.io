@@ -52,9 +52,6 @@ h1 { font: 400 clamp(2.9rem, 5vw, 4.5rem)/1.12 var(--serif); letter-spacing: -.0
 .portrait { position: relative; margin: 7px 0 0; }
 .portrait img { width: 236px; height: 270px; object-fit: cover; object-position: center; background: var(--tint); border-radius: 3px; }
 .quiet-stars { position: absolute; bottom: -22px; right: -19px; width: 30px; height: 20px; fill: none; stroke: #b39760; stroke-width: 1; stroke-linejoin: round; opacity: .65; pointer-events: none; }
-.next-chapter { display: flex; align-items: baseline; gap: 25px; padding: 19px 24px; border-left: 3px solid var(--blue); background: var(--tint); font-size: .9375rem; }
-.next-chapter .date { flex-shrink: 0; color: var(--blue); font-size: .75rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
-.next-chapter a { color: var(--ink); text-decoration-color: #b8c7dd; }
 
 .body-grid { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 60px; padding-top: 65px; }
 .section-index { align-self: start; position: sticky; top: 120px; }
@@ -141,8 +138,6 @@ h2 { max-width: 100%; overflow-wrap: anywhere; font: 400 2rem/1.25 var(--serif);
   .intro-description { order: 2; flex: 1 1 100%; min-width: 0; }
   .bio { font-size: 1rem; }
   .interests { margin-block: 21px; }
-  .next-chapter { display: block; padding: 16px 19px; }
-  .next-chapter .date { display: block; margin-bottom: 4px; }
   .body-grid { display: block; padding-top: 39px; }
   .section-index { display: none; }
   .content-section { padding-bottom: 35px; }
